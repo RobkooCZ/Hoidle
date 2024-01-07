@@ -1,21 +1,21 @@
-document.addEventListener('DOMContentLoaded', function () {
-  var hasPopupBeenShown = localStorage.getItem('popupShown');
-  var modal = document.getElementById('myModal');
-  var continueButton = document.getElementById('continueButton');
+// document.addEventListener('DOMContentLoaded', function () {
+//   var hasPopupBeenShown = localStorage.getItem('popupShown');
+//   var modal = document.getElementById('myModal');
+//   var continueButton = document.getElementById('continueButton');
 
-  if (!hasPopupBeenShown) {
-      // Show the pop-up
-      modal.style.display = 'block';
+//   if (!hasPopupBeenShown) {
+//       // Show the pop-up
+//       modal.style.display = 'block';
 
-      // Set a flag indicating that the pop-up has been shown
-      localStorage.setItem('popupShown', 'true');
-  }
+//       // Set a flag indicating that the pop-up has been shown
+//       localStorage.setItem('popupShown', 'true');
+//   }
 
-  // Hide the modal when the "Continue" button is clicked
-  continueButton.addEventListener('click', function () {
-      modal.style.display = 'none';
-  });
-});
+//   // Hide the modal when the "Continue" button is clicked
+//   continueButton.addEventListener('click', function () {
+//       modal.style.display = 'none';
+//   });
+// });
 
 
 console.log('test')

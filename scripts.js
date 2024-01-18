@@ -49,23 +49,37 @@ var backgroundImages = [
     'url(images/RDT_20231223_155818285154863569026849.jpg)',
 ];
 
+// Get reference to the body element of the HTML document
 var bodyElement = document.body;
+
+// Initialize currentIndex to keep track of the current background index
 var currentIndex = -1;
 
-    
+// Function to generate a random index for the backgroundImages array
 function getRandomIndex() {
     var newIndex;
+    
+    // Ensure the new index is different from the current index
     do {
         newIndex = Math.floor(Math.random() * backgroundImages.length);
     } while (newIndex === currentIndex);
+    
+    // Update currentIndex with the new index
     currentIndex = newIndex;
+    
+    // Return the new index
     return currentIndex;
 }
 
+// Function to change the background of the body element
 function changeBackground() {
+    // Get a random index using the getRandomIndex function
     var randomIndex = getRandomIndex();
+    
+    // Set the background image of the body element to the selected image
     bodyElement.style.backgroundImage = backgroundImages[randomIndex];
 }
 
-  // Change background every 10 seconds (10000 milliseconds)
+// Change the background every 10 seconds (10000 milliseconds) using setInterval
 setInterval(changeBackground, 10000);
+

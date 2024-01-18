@@ -24,8 +24,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-
-console.log('test')
 var backgroundImages = [
     'url(images/qQiK21B.jpg)',
     'url(images/steamuserimages-a.akamaihd.jpg)',

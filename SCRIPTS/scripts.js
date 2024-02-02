@@ -130,5 +130,3 @@ var links = [
   }
   
   experiment();
-
-  console.log('url(' + backgroundImages[randomIndex] + ')');

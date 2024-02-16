@@ -6,7 +6,7 @@
 
 body {
     & header{
-        background-image: url("../images/backgroundImages/headerBackgroundImage.png");
+        background-image: url("../images/background/headerBackgroundImage.png");
         background-size: cover;
         background-position: 60%;
         border-bottom: 0.5vh solid black;
@@ -19,7 +19,7 @@ body {
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
 
-    background-image: url("../images/backgroundImages/qQiK21B.jpg");
+    background-image: url("../images/background/qQiK21B.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;

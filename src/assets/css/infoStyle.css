@@ -37,10 +37,15 @@ body {
             margin-right: 2%;
             margin-left: 10vh;
             width: 50%;
+
             & .img{   
                 display: block;
                 max-width: 100%;
+                width: 100%;
+                height: 100%;
+                overflow-y: auto;
             }
+
             max-width: 100vw;
             max-height: 50vh;
         }
@@ -68,11 +73,14 @@ body {
 
         & .link{
             border: black 0.5vh solid;
-            padding: 1vh;
+            padding: 2vh;
+            padding-left: 3vh;
+            padding-right: 3vh;
             background-color: aliceblue;
             text-decoration: none;
             color: black;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 4vh;
         }
     }
 }

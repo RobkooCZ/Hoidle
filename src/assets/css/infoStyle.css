@@ -74,7 +74,7 @@ body {
 
             & p{
                 font-size: 2vh;
-                padding-left: 0.3vh;
+                padding-left: 0.3;
             }
         }
     }

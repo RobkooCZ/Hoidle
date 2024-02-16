@@ -1,11 +1,20 @@
+/* Reset default padding and margin for all elements */
 * {
     padding: 0;
     margin: 0;
 }
 
-
+/* Styling for the body */
 body {
-    & header{
+    /* Background image and properties */
+    background-image: url("../images/background/qQiK21B.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    transition: background-image 2s ease-in-out;
+
+    /* Styling for the header */
+    & header {
         background-image: url("../images/background/headerBackgroundImage.png");
         background-size: cover;
         background-position: 60%;
@@ -19,18 +28,14 @@ body {
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
 
-    background-image: url("../images/background/qQiK21B.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    transition: background-image 2s ease-in-out;
-
-    & .parent{
+    /* Styling for the parent container */
+    & .parent {
         margin-top: 5vh;
         display: flex;
         justify-content: space-between;
-        
-        & .image{
+
+        /* Styling for the image container */
+        & .image {
             display: block;
             border: black 0.5vh solid;
             border-radius: 1vh;
@@ -38,7 +43,8 @@ body {
             margin-left: 10vh;
             width: 50%;
 
-            & .img{   
+            /* Styling for the image */
+            & .img {
                 display: block;
                 max-width: 100%;
                 width: 100%;
@@ -50,7 +56,8 @@ body {
             max-height: 50vh;
         }
 
-        & .basicInfo{
+        /* Styling for the basicInfo container */
+        & .basicInfo {
             border: black 0.5vh solid;
             border-radius: 1vh;
             margin-left: 2%;
@@ -59,19 +66,22 @@ body {
             background-color: antiquewhite;
             opacity: 75%;
 
-            & h2{
+            /* Styling for the heading */
+            & h2 {
                 text-align: center;
             }
         }
     }
 
-    & .goBackButton{
+    /* Styling for the goBackButton container */
+    & .goBackButton {
         margin-top: 5vh;
         display: flex;
         width: 100%;
         justify-content: center;
 
-        & .link{
+        /* Styling for the link */
+        & .link {
             border: black 0.5vh solid;
             padding: 2vh;
             padding-left: 3vh;

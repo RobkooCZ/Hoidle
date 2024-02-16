@@ -1,37 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Picture Gallery</title>
-        <link rel="stylesheet" href="../src/assets/css/style.css">
-        <link rel="shortcut icon" href="../src/assets/images/icons/favicon.ico" type="image/x-icon">
-        <script src="../src/assets/js/scripts.js" defer></script>
-        <link rel="stylesheet" href="https://unpkg.com/simplebar@5.3.0/dist/simplebar.min.css" integrity="sha384-CaZ9HRrOe1XpcaGkGyOT4yFc1EAAbTwQ9j6iZt0ewhucMuh1iZDrPOnGjbb4SSt3" crossorigin="anonymous">
-        <script src="https://unpkg.com/simplebar@5.3.0/dist/simplebar.min.js" integrity="sha384-oM5U7HaoT1uFyCMwe4FNjJ5MUEt/IGgF8nZG6K8M/A9fIpA3Sz4ri2thQqU6qBsp" crossorigin="anonymous" defer></script>
+    <!-- Meta tags for character set and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the webpage -->
+    <title>Picture Gallery</title>
+    <!-- Link to CSS stylesheet -->
+    <link rel="stylesheet" href="../src/assets/css/style.css">
+    <!-- Shortcut icon for the webpage -->
+    <link rel="shortcut icon" href="../src/assets/images/icons/favicon.ico" type="image/x-icon">
+    <!-- Script link for JavaScript file with 'defer' attribute -->
+    <script src="../src/assets/js/scripts.js" defer></script>
+    <!-- Link to SimpleBar CSS stylesheet -->
+    <link rel="stylesheet" href="https://unpkg.com/simplebar@5.3.0/dist/simplebar.min.css" integrity="sha384-CaZ9HRrOe1XpcaGkGyOT4yFc1EAAbTwQ9j6iZt0ewhucMuh1iZDrPOnGjbb4SSt3" crossorigin="anonymous">
+    <!-- Script link for SimpleBar JavaScript file with 'defer' attribute -->
+    <script src="https://unpkg.com/simplebar@5.3.0/dist/simplebar.min.js" integrity="sha384-oM5U7HaoT1uFyCMwe4FNjJ5MUEt/IGgF8nZG6K8M/A9fIpA3Sz4ri2thQqU6qBsp" crossorigin="anonymous" defer></script>
 </head>
 <body>
-        <header>
-            <h1>Picture gallery containing screenshots from my games</h1>
-        </header>
+    <!-- Header section -->
+    <header>
+        <!-- Heading of the page -->
+        <h1>Picture gallery containing screenshots from my games</h1>
+    </header>
 
-        <nav>
-            <div class="topnav">
-                <a class="width" href="basic_info.html">Basic Info</a>
-                <a class="active width" href="picturegallery.html">Picture Gallery</a>
-                <a class="special width" href="hoidle.html">HOIDLE</a>
-                <a class="width" href="comparison.html">Comparison</a>
-                <a class="width" href="contact.html">Contact & Info</a>
-            </div>
-        </nav>
+    <!-- Navigation bar -->
+    <nav>
+        <div class="topnav">
+            <!-- Links to different sections -->
+            <a class="width" href="basic_info.html">Basic Info</a>
+            <a class="active width" href="picturegallery.html">Picture Gallery</a>
+            <a class="special width" href="hoidle.html">HOIDLE</a>
+            <a class="width" href="comparison.html">Comparison</a>
+            <a class="width" href="contact.html">Contact & Info</a>
+        </div>
+    </nav>
 
-        <div class="gallery" data-simplebar>
-            <div class="image-container">
-                <a href="../public/picture_info/germany1939.html">
-                    <img src="../src/assets/images/screenshots/hoi4_ger1939.png" alt="Image 1">
-                </a>
-                <p class="image-title">Germany in 1939</p>
-            </div>
+    <!-- Gallery section with SimpleBar -->
+    <div class="gallery" data-simplebar>
+        <!-- Image containers with titles and links -->
+        <div class="image-container">
+            <!-- Link to picture info -->
+            <a href="../public/picture_info/germany1939.html">
+                <!-- Image -->
+                <img src="../src/assets/images/screenshots/hoi4_ger1939.png" alt="Image 1">
+            </a>
+            <!-- Image title -->
+            <p class="image-title">Germany in 1939</p>
+        </div>
             <div class="image-container">
                 <a href="../public/picture_info/germanWorld.html">
                     <img src="../src/assets/images/screenshots/hoi4_gerworldconq.png" alt="Image 2">

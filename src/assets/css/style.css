@@ -4,10 +4,8 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-
-
 header {
-  background-image: url("../IMAGES/backgroundImages/headerBackgroundImage.png");
+  background-image: url("../images/background/headerBackgroundImage.png");
   background-size: cover;
   background-position: 60%;
   border-bottom: 0.5vh solid black;
@@ -26,7 +24,7 @@ header {
 }
 
 body {
-  background-image: url(../IMAGES/backgroundImages/qQiK21B.jpg);
+  background-image: url("../images/background/qQiK21B.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;

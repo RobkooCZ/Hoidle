@@ -7,24 +7,15 @@
     <!-- Title of the webpage -->
     <title>Basic Info</title>
     <!-- Link to CSS stylesheet -->
-    <link rel="stylesheet" href="../src/assets/css/style.css">
+    <link id="theme-link" rel="stylesheet" href="../src/assets/css/style.css">
     <!-- Shortcut icon for the webpage -->
     <link rel="shortcut icon" href="../src/assets/images/icons/favicon.ico" type="image/x-icon">
     <!-- Script link for JavaScript file with 'defer' attribute -->
     <script src="../src/assets/js/scripts.js" defer></script>
+    <script src="../src/assets/js/theme-switcher.js" defer></script>
 </head> 
 
-<body>
-    <!-- Modal section for warning message -->
-    <div id="myModal" class="modal">
-        <div class="modal-content">
-            <!-- Warning message -->
-            <p><b>WARNING</b><br>This website includes depictions of flags associated with totalitarian regimes, including symbols from historical periods such as Nazism. The intention behind showcasing these symbols is not to endorse or support the ideologies represented. The content is presented for educational and historical purposes only. Viewer discretion is advised.</p>
-            <!-- Button to continue -->
-            <button id="continueButton">Continue</button>
-        </div>
-    </div>
-    
+<body> 
     <!-- Header section -->
     <header>
         <!-- Heading of the page -->
@@ -89,5 +80,22 @@
         <p><br><b>Difficulty</b><br>Hearts of Iron IV can be quite challenging for newcomers due to its complex strategic gameplay and steep learning curve. The game requires a solid understanding of military tactics, resource management, and diplomatic intricacies during World War II. Players must navigate through intricate political systems, handle diverse armies, and make crucial decisions that can alter the course of history. The vast array of options for research, production, and division design adds depth but also demands strategic foresight. The dynamic nature of global conflicts and the need to adapt to unforeseen challenges make mastering HoI4 a rewarding yet demanding experience, especially for those new to grand strategy games.</p>
     </div>
 
+    <button id="settingsButton">
+        <img id="settingsImage" src="../src/assets/images/icons/settings_icon.png" alt="Settings Icon">
+    </button>
+    
+    <div id="settingsOverlay">
+        <div id="settingsWindow">
+            <h2 class="settingsTitle">Settings</h2>
+            <div class="toggle-switch">
+                <h2>Theme:</h2>
+                <input type="checkbox" id="theme-switch">
+                <label for="theme-switch"></label>
+            </div>
+            <button id="closeButton">
+                <img src="../src/assets/images/icons/x.png" alt="Close Icon">
+            </button>            
+        </div>
+    </div>
 </body>
 </html>

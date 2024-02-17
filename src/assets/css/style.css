@@ -33,41 +33,129 @@ body {
   background-size: cover; /* Cover the entire background */
   transition: background-image 2s ease-in-out; /* Transition effect for background image */
 
-  /* & #settingsButton {
+  #settingsButton {
     background: none;
     border: none;
     cursor: pointer;
-    margin: 20px;
-    & #settingsImage{
+    position: absolute;
+    top: 0.5vh;
+    right: 1vh;
+}
+
+  #settingsImage {
       max-width: 10vh;
       max-height: 10vh;
       width: 10vh;
       height: 10vh;
-    }
   }
-  
+
   #settingsOverlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: none;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
   }
-  
+
   #settingsWindow {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
+      background-color: white;
+      position: relative;
+      border-radius: 1vh;
+      background-color: antiquewhite; /* Background color */
+      border: black 0.5vh solid; /* Border style */
+      border-radius: 3vh; /* Border radius */
+      margin: 2vh 5vh 1vh; /* Margin */
+      padding: 10vh 5vh 2vh 5vh; /* Padding */
+      position: relative;
+      max-width: 20vw;
+      max-height: 70vh; /* Set maximum height for the window */
+      overflow-y: auto; /* Enable vertical scrolling if content overflows */
+
+      & p {
+        max-width: 100%; /* Set maximum width for the paragraph */
+        word-wrap: break-word; /* Allow the paragraph to wrap text */
+      }
+      
+  } 
+
+  .toggle-switch {
+    display: inline-flex; /* Use inline-flex display to align items horizontally */
+    align-items: center; /* Align items vertically */
   }
-  
+
+  .toggle-switch input {
+      display: none;
+  }
+
+  .toggle-switch label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    width: 6vh;
+    height: 3.4vh;
+    background-color: white;
+    border-radius: 3.4vh;
+    transition: background-color 0s;
+}
+
+  .toggle-switch input:not(:checked) + label {
+      margin-left: 1vh;
+      background-color: white;
+      border: 0.3vh solid black;
+  }
+
+  .toggle-switch label:before {
+      content:'';
+      position: absolute;
+      left: 0.2vh;
+      top: 0.2vh;
+      width: 2.8vh;
+      height: 2.8vh;
+      background-image: url('../images/icons/light-icon.png');
+      background-size: cover;
+      border-radius: 50%;
+      transition: transform 0.3s;
+  }
+
+  .toggle-switch input:checked + label:before {
+      transform: translateX(2.6vh);
+      background-image: url('../images/icons/dark-icon.png'); 
+      content: '';
+  }
+
+  .settingsTitle {
+    font-size: 4vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin-top: 1vh;
+    position: absolute;
+    top: 1vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
   #closeButton {
-    margin-top: 10px;
-  } */
+      background: none;
+      border: none;
+      position: absolute;
+      top: 1vh;
+      right: 1vh;
+      cursor: pointer;
+  }
+
+  #closeButton img {
+      max-width: 3vh;
+      max-height: 3vh;
+      width: 3vh;
+      height: 3vh;
+  }
+
   
   /* Styling for navigation bar when idle */
   .hoidleNav {
@@ -85,7 +173,7 @@ body {
       overflow: hidden; /* Hide overflowing content */
       border-radius: 1vh; /* Border radius */
       width: 100%; /* Set width */
-      background-color: gray; /* Background color */
+      background-color: #ddd; /* Background color */
       border-top: 0; /* Remove top border */
       display: flex; /* Make it a flex container */
 
@@ -95,7 +183,7 @@ body {
         justify-content: center; /* Center align the content horizontally */
         align-items: center; /* Center align the content vertically */
         float: left; /* Float the elements to the left */
-        color: #f2f2f2; /* Text color */
+        color: black; /* Text color */
         padding: 1.5vh 1.7vh; /* Padding */
         text-decoration: none; /* Remove underline */
         font-size: 2.5vh; /* Font size */
@@ -129,12 +217,12 @@ body {
         }
 
         &.active {
-          background-color: #04AA6D; /* Background color */
-          color: white; /* Text color */
+          background-color: lightgreen; /* Background color */
+          color: black; /* Text color */
         }
 
         &:hover {
-          background-color: #ddd; /* Background color on hover */
+          background-color: gray; /* Background color on hover */
           color: black; /* Text color on hover */
         }
 

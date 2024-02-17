@@ -7,25 +7,23 @@
 /* Styling for the body */
 body {
     /* Background image and properties */
-    background-image: url("../images/background/KasierLookingAtTheEiffelTower.jpg");
+    background-image: url("../images/background/stars.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    transition: background-image 2s ease-in-out;
 
     /* Styling for the header */
     & header {
-        background-image: url("../images/background/headerBackgroundImage.png");
-        background-size: cover;
-        background-position: 60%;
-        border-bottom: 0.5vh solid black;
+        background-color: black;
+        border-bottom: 0.5vh solid white;
         height: 6vh;
-        border: black 0.5vh solid;
+        border: white 0.5vh solid;
         border-radius: 1.5vh;
         margin: 2vh 70vh 1vh;
         text-align: center;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 2.5vh;
+        color:white;
     }
 
     /* Styling for the parent container */
@@ -37,7 +35,7 @@ body {
         /* Styling for the image container */
         & .image {
             display: block;
-            border: black 0.5vh solid;
+            border: white 0.5vh solid;
             border-radius: 1vh;
             margin-right: 2%;
             margin-left: 10vh;
@@ -58,13 +56,14 @@ body {
 
         /* Styling for the basicInfo container */
         & .basicInfo {
-            border: black 0.5vh solid;
+            border: white 0.5vh solid;
             border-radius: 1vh;
             margin-left: 2%;
             margin-right: 10vh;
             width: 50%;
-            background-color: antiquewhite;
+            background-color: black;
             opacity: 75%;
+            color: white;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
             /* Styling for the heading */
@@ -90,18 +89,18 @@ body {
 
         /* Styling for the link */
         & .link {
-            border: black 0.5vh solid;
+            border: white 0.5vh solid;
             padding: 2vh;
             padding-left: 3vh;
             padding-right: 3vh;
-            background-color: aliceblue;
+            background-color: black;
             text-decoration: none;
-            color: black;
+            color: white;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             font-size: 4vh;
         }
     }
-
+    
     #settingsButton {
         background: none;
         border: none;
@@ -132,11 +131,10 @@ body {
       }
     
       #settingsWindow {
-          background-color: white;
           position: relative;
           border-radius: 1vh;
-          background-color: antiquewhite; /* Background color */
-          border: black 0.5vh solid; /* Border style */
+          background-color: black; /* Background color */
+          border: white 0.5vh solid; /* Border style */
           border-radius: 3vh; /* Border radius */
           margin: 2vh 5vh 1vh; /* Margin */
           padding: 10vh 5vh 2vh 5vh; /* Padding */
@@ -144,13 +142,14 @@ body {
           max-width: 20vw;
           max-height: 70vh; /* Set maximum height for the window */
           overflow-y: auto; /* Enable vertical scrolling if content overflows */
+          color: white; /* Text color */
     
           & p {
             max-width: 100%; /* Set maximum width for the paragraph */
             word-wrap: break-word; /* Allow the paragraph to wrap text */
           }
           
-      } 
+      }
     
       .toggle-switch {
         display: inline-flex; /* Use inline-flex display to align items horizontally */
@@ -167,15 +166,15 @@ body {
         cursor: pointer;
         width: 6vh;
         height: 3.4vh;
-        background-color: white;
+        background-color: #ccc;
         border-radius: 3.4vh;
         transition: background-color 0s;
     }
     
-      .toggle-switch input:not(:checked) + label {
+      .toggle-switch input:checked + label {
           margin-left: 1vh;
-          background-color: white;
-          border: 0.3vh solid black;
+          background-color:black;
+          border: 0.3vh solid white;
       }
     
       .toggle-switch label:before {
@@ -187,13 +186,14 @@ body {
           height: 2.8vh;
           background-image: url('../images/icons/light-icon.png');
           background-size: cover;
+          background-color: black;
           border-radius: 50%;
           transition: transform 0.3s;
       }
     
       .toggle-switch input:checked + label:before {
           transform: translateX(2.6vh);
-          background-image: url('../images/icons/dark-icon.png'); 
+          background-image: url('../images/icons/dark-icon.png');
           content: '';
       }
     

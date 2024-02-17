@@ -1,0 +1,472 @@
+/* Resetting default styles for all elements */
+* {
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+    font-family: Arial, Helvetica, sans-serif; /* Set default font family */
+  }
+  
+  /* Styling for the header section */
+  header {
+    background-color: black; /* Background color */
+    border-bottom: 0.5vh solid white; /* Bottom border */
+    height: 4vh; /* Set height */
+    border: white 0.5vh solid; /* Border style */
+    border-radius: 1.5vh; /* Border radius */
+    margin: 2vh 35vh 1vh; /* Margin */
+    padding: 1vh 0; /* Padding */
+  
+    h1 {
+      display: flex; /* Make the heading a flex container */
+      justify-content: center; /* Center align the content horizontally */
+      align-items: center; /* Center align the content vertically */
+      font-size: 3vh; /* Font size */
+      color: white; /* Text color */
+    }
+  }
+  
+  /* Styling for the body section */
+  body {
+    background-image: url("../images/background/stars.jpg"); /* Background image */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    background-attachment: fixed; /* Fix the background image */
+    background-size: cover; /* Cover the entire background */
+    
+    #settingsButton {
+      background: none;
+      border: none;
+      cursor: pointer;
+      position: absolute;
+      top: 0.5vh;
+      right: 1vh;
+  }
+  
+    #settingsImage {
+        max-width: 10vh;
+        max-height: 10vh;
+        width: 10vh;
+        height: 10vh;
+    }
+  
+    #settingsOverlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+  
+    #settingsWindow {
+        position: relative;
+        border-radius: 1vh;
+        background-color: black; /* Background color */
+        border: white 0.5vh solid; /* Border style */
+        border-radius: 3vh; /* Border radius */
+        margin: 2vh 5vh 1vh; /* Margin */
+        padding: 10vh 5vh 2vh 5vh; /* Padding */
+        position: relative;
+        max-width: 20vw;
+        max-height: 70vh; /* Set maximum height for the window */
+        overflow-y: auto; /* Enable vertical scrolling if content overflows */
+        color: white; /* Text color */
+  
+        & p {
+          max-width: 100%; /* Set maximum width for the paragraph */
+          word-wrap: break-word; /* Allow the paragraph to wrap text */
+        }
+        
+    }
+  
+    .toggle-switch {
+      display: inline-flex; /* Use inline-flex display to align items horizontally */
+      align-items: center; /* Align items vertically */
+    }
+  
+    .toggle-switch input {
+        display: none;
+    }
+  
+    .toggle-switch label {
+      display: block;
+      position: relative;
+      cursor: pointer;
+      width: 6vh;
+      height: 3.4vh;
+      background-color: #ccc;
+      border-radius: 3.4vh;
+      transition: background-color 0s;
+  }
+  
+    .toggle-switch input:checked + label {
+        margin-left: 1vh;
+        background-color:black;
+        border: 0.3vh solid white;
+    }
+  
+    .toggle-switch label:before {
+        content:'';
+        position: absolute;
+        left: 0.2vh;
+        top: 0.2vh;
+        width: 2.8vh;
+        height: 2.8vh;
+        background-image: url('../images/icons/light-icon.png');
+        background-size: cover;
+        background-color: black;
+        border-radius: 50%;
+        transition: transform 0.3s;
+    }
+  
+    .toggle-switch input:checked + label:before {
+        transform: translateX(2.6vh);
+        background-image: url('../images/icons/dark-icon.png');
+        content: '';
+    }
+  
+    .settingsTitle {
+      font-size: 4vh;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      text-align: center;
+      margin-top: 1vh;
+      position: absolute;
+      top: 1vh;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+  }
+  
+    #closeButton {
+        background: none;
+        border: none;
+        position: absolute;
+        top: 1vh;
+        right: 1vh;
+        cursor: pointer;
+    }
+  
+    #closeButton img {
+        max-width: 3vh;
+        max-height: 3vh;
+        width: 3vh;
+        height: 3vh;
+    }
+  
+    
+    /* Styling for navigation bar when idle */
+    .hoidleNav {
+      margin: 0 40vh; /* Margin */
+    }
+  
+    /* Styling for navigation bar */
+    nav {
+      border: white 0.75vh solid; /* Border style */
+      border-radius: 2vh; /* Border radius */
+      margin: 2vh 35vh 1vh; /* Margin */
+  
+      /* Styling for the top navigation bar */
+      .topnav {
+        overflow: hidden; /* Hide overflowing content */
+        border-radius: 1vh; /* Border radius */
+        width: 100%; /* Set width */
+        background-color: #2e2e2e; /* Background color */
+        border-top: 0; /* Remove top border */
+        display: flex; /* Make it a flex container */
+  
+        /* Styling for links in the navigation bar */
+        a {
+          display: flex; /* Make it a flex container */
+          justify-content: center; /* Center align the content horizontally */
+          align-items: center; /* Center align the content vertically */
+          float: left; /* Float the elements to the left */
+          color: #f2f2f2; /* Text color */
+          padding: 1.5vh 1.7vh; /* Padding */
+          text-decoration: none; /* Remove underline */
+          font-size: 2.5vh; /* Font size */
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font family */
+  
+          /* Styling for specific link widths */
+          &.btn-width {
+            box-sizing: border-box; /* Include border and padding in the element's total width and height */
+            width: 25%; /* Set width */
+          }
+  
+          &.width {
+            box-sizing: border-box; /* Include border and padding in the element's total width and height */
+            width: 20%; /* Set width */
+          }
+  
+          &.special,
+          &.special-hoidle {
+            box-sizing: border-box; /* Include border and padding in the element's total width and height */
+            width: 30%; /* Set width */
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Font family */
+            font-size: 3vh; /* Font size */
+            color: white; /* Text color */
+            border-left: white 0.5vh solid; /* Left border */
+            border-right: white 0.5vh solid; /* Right border */
+            background-color: black; /* Background color */
+          }
+  
+          &.special-hoidle {
+            width: 50%; /* Set width */
+          }
+  
+          &.active {
+            background-color: darkgreen; /* Background color */
+            color: white; /* Text color */
+          }
+  
+          &:hover {
+            background-color: #ddd; /* Background color on hover */
+            color: black; /* Text color on hover */
+          }
+  
+          /* Styling for special links on hover */
+          &.special:hover,
+          &.special-hoidle:hover {
+            background-color: blue; /* Background color on hover */
+            color: white; /* Text color on hover */
+          }
+        }
+      }
+    }
+  
+    /* Styling for flex container */
+    .flex-container {
+      display: flex; /* Make it a flex container */
+      justify-content: space-between; /* Distribute space evenly between flex items */
+      align-items: center; /* Center align the content vertically */
+      margin-top: 2vh; /* Margin */
+    }
+  
+    /* Styling for modal */
+    .modal {
+      display: none; /* Hide modal by default */
+      position: fixed; /* Position */
+      top: 0; /* Position from top */
+      left: 0; /* Position from left */
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      background-color: rgba(0, 0, 0, 0.7); /* Background color with opacity */
+      z-index: 999; /* Z-index */
+      
+      /* Styling for modal content */
+      .modal-content {
+        position: absolute; /* Position */
+        top: 50%; /* Position from top */
+        left: 50%; /* Position from left */
+        transform: translate(-50%, -50%); /* Center align horizontally and vertically */
+        background-color: #fefefe; /* Background color */
+        padding: 1.5vh; /* Padding */
+        text-align: center; /* Center align text */
+        border-radius: 1vh; /* Border radius */
+        font-size: 2vh; /* Font size */
+        border: 0.3vh black solid; /* Border style */
+        z-index: 1000; /* Z-index */
+      }
+  
+      /* Styling for continue button */
+      #continueButton {
+        border: 0.1vh black solid; /* Border style */
+        color: black; /* Text color */
+        padding: 0.7vh 1.5vh; /* Padding */
+        text-decoration: none; /* Remove underline */
+        display: inline-block; /* Make it an inline-block element */
+        font-size: 1.6vh; /* Font size */
+        border-radius: 1vh; /* Border radius */
+        cursor: pointer; /* Cursor style */
+      }
+    }
+  
+    /* Styling for the main part */
+    .mainPart {
+      background-color: black; /* Background color */
+      opacity: 75%; /* Opacity */
+      border: white 0.5vh solid; /* Border style */
+      border-radius: 3vh; /* Border radius */
+      margin: 2vh 5vh 1vh; /* Margin */
+      padding: 1vh; /* Padding */
+      overflow-y: auto; /* Enable vertical scrollbar when needed */
+      max-height: 70vh; /* Maximum height */
+  
+      /* Styling for scrollbar */
+      scrollbar-width: thin;
+      scrollbar-color: #888 #f1f1f1;
+  
+      /* Styling for WIP class */
+      .WIP {
+        font-size: 15vh; /* Font size */
+        text-align: center; /* Center align text */
+        color: white;
+      }
+  
+      &::-webkit-scrollbar {
+        width: 1.2vh; /* Width */
+      }
+  
+      &::-webkit-scrollbar-track {
+        background-color: #f1f1f1; /* Background color */
+        border: black 0.1vh solid; /* Border style */
+        border-radius: 0 2vh 2vh 0; /* Border radius */
+        margin-top: 0.5vh; /* Margin top */
+        margin-bottom: 0.5vh; /* Margin bottom */
+      }
+  
+      &::-webkit-scrollbar-thumb {
+        background-color: #888; /* Background color */
+        border-radius: 0 2vh 2vh 0; /* Border radius */
+      }
+  
+      &::-webkit-scrollbar-thumb:hover {
+        background-color: #555; /* Background color on hover */
+      }
+  
+      /* Styling for bigAssText class */
+      .bigAssText {
+        font-size: 4vh; /* Font size */
+      }
+  
+      /* Styling for biggestAssText class */
+      .biggestAssText {
+        font-size: 8vh; /* Font size */
+        text-align: center; /* Center align text */
+      }
+  
+      p {
+        font-size: 2.5vh; /* Font size */
+        padding-left: 1vh; /* Padding left */
+        color: white; /* Text color */
+      }
+  
+      /* Styling for Contact class */
+      .Contact {
+        a {
+          text-decoration: none; /* Remove underline */
+          color: green; /* Text color */
+        }
+      }
+  
+      /* Styling for table */
+      table {
+        max-width: 115vh; /* Maximum width */
+        margin: auto; /* Center align */
+        font-size: 2vh; /* Font size */
+        color:white; /* Text color */
+  
+        tr {
+          th {
+            border-bottom: 0.1vh white solid; /* Bottom border */
+            border-left: 0.1vh white solid; /* Left border */
+          }
+  
+          td {
+            border-bottom: 0.1vh white solid; /* Bottom border */
+            border-left: 0.1vh white solid; /* Left border */
+            text-align: center; /* Center align text */
+  
+            &.firstOne {
+              border-left: 0; /* Remove left border */
+            }
+          }
+        }
+      }
+    }
+  
+    /* Styling for ContactPart class */
+    .ContactPart {
+      text-align: center; /* Center align text */
+    }
+  
+    /* Styling for gallery */
+    .gallery {
+      display: grid; /* Use grid layout */
+      grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+      gap: 2vh; /* Gap between grid items */
+      margin: 4vh; /* Margin */
+      margin-top: 2vh; /* Margin top */
+      overflow-y: auto; /* Enable vertical scrollbar when needed */
+      max-height: 75vh; /* Maximum height */
+  
+      /* Styling for scrollbar */
+      scrollbar-width: thin;
+      scrollbar-color: #888 #f1f1f1;
+  
+      &::-webkit-scrollbar {
+        width: 1.2vh; /* Width */
+      }
+  
+      &::-webkit-scrollbar-track {
+        background-color: #f1f1f1; /* Background color */
+        border: black 0.1vh solid; /* Border style */
+        border-radius: 1vh; /* Border radius */
+      }
+  
+      &::-webkit-scrollbar-thumb {
+        background-color: #888; /* Background color */
+        border-radius: 1vh; /* Border radius */
+      }
+  
+      &::-webkit-scrollbar-thumb:hover {
+        background-color: #555; /* Background color on hover */
+      }
+    }
+  
+    /* Styling for image container */
+    .image-container {
+      position: relative; /* Position */
+      overflow: hidden; /* Hide overflowing content */
+      border-radius: 2vh; /* Border radius */
+      max-height: 40vh; /* Maximum height */
+      margin-right: 1vh; /* Margin right */
+  
+      /* Styling for image title */
+      .image-title {
+        position: absolute; /* Position */
+        bottom: 0; /* Position from bottom */
+        left: 0; /* Position from left */
+        width: 100%; /* Full width */
+        background: rgba(0, 0, 0, 0.7); /* Background color with opacity */
+        color: #fff; /* Text color */
+        margin: 0; /* Margin */
+        padding-top: 1vh; /* Padding top */
+        padding-bottom: 1vh; /* Padding bottom */
+        opacity: 0; /* Initial opacity */
+        transition: opacity 0.3s ease-in-out; /* Transition effect */
+        text-align: center; /* Center align text */
+        font-size: 2vh; /* Font size */
+      }
+  
+      &:hover .image-title {
+        opacity: 1; /* Show image title on hover */
+      }
+    }
+  
+    /* Styling for images in the gallery */
+    .gallery img {
+      width: 100%; /* Full width */
+      height: auto; /* Maintain aspect ratio */
+      display: block; /* Display as block element */
+      border-radius: 2vh; /* Border radius */
+      transition: transform 0.2s ease-in-out; /* Transition effect */
+    }
+  
+    /* Styling for images in the gallery on hover */
+    .gallery img:hover {
+      transform: scale(1.1); /* Scale image on hover */
+    }
+  }
+  
+  /* Media queries for smaller screens */
+  @media only screen and (max-width: 768px) {
+    /* Adjustments for image title on smaller screens */
+    .image-title {
+      font-size: 0.5vh; /* Font size */
+      padding-top: 0vh; /* Padding top */
+      padding-bottom: 0vh; /* Padding bottom */
+    }
+  }
+  

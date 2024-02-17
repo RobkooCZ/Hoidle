@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Title of the webpage -->
-    <title>German World</title>
+    <title>Japanese G. 2</title>
     <!-- Link to CSS stylesheet -->
-    <link rel="stylesheet" href="../../src/assets/css/infoStyle.css">
+    <link id="theme-link" rel="stylesheet" href="../../src/assets/css/infoStyle.css">
     <!-- Shortcut icon for the webpage -->
     <link rel="shortcut icon" href="../../src/assets/images/icons/favicon.ico" type="image/x-icon">
     <!-- Script link for JavaScript file with 'defer' attribute -->
     <script src="../../src/assets/js/scripts.js" defer></script>
+    <script src="../../src/assets/js/theme-switcher-imageInfo.js" defer></script>
 </head>
 
 <body>
@@ -44,6 +45,24 @@
     <div class="goBackButton">
         <!-- Link to the picture gallery page -->
         <a class="link" href="../picturegallery.html">Go back</a>
+    </div>
+
+    <button id="settingsButton">
+        <img id="settingsImage" src="../../src/assets/images/icons/settings_icon.png" alt="Settings Icon">
+    </button>
+    
+    <div id="settingsOverlay">
+        <div id="settingsWindow">
+            <h2 class="settingsTitle">Settings</h2>
+            <div class="toggle-switch">
+                <h2>Theme:</h2>
+                <input type="checkbox" id="theme-switch">
+                <label for="theme-switch"></label>
+            </div>
+            <button id="closeButton">
+                <img src="../../src/assets/images/icons/x.png" alt="Close Icon">
+            </button>            
+        </div>
     </div>
 </body>
 </html>

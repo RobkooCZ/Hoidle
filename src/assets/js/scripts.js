@@ -1,108 +1,88 @@
-// Event listener to execute code after the DOMContentLoaded event is fired
-document.addEventListener('DOMContentLoaded', function () {
-  // Check if the pop-up has been shown before
-  var hasPopupBeenShown = localStorage.getItem('popupShown');
-  var modal = document.getElementById('myModal'); // Get reference to the modal
-  var continueButton = document.getElementById('continueButton'); // Get reference to the "Continue" button
+document.addEventListener("DOMContentLoaded", function() {
+  const savedTheme = localStorage.getItem("theme");
 
-  // If the pop-up has not been shown before, display it
-  if (!hasPopupBeenShown) {
-      modal.style.display = 'block'; // Show the pop-up
+  // Check if the saved theme is light
+  if (savedTheme === "light") {
+      // Get the current path
+      var path = window.location.pathname;
+      path = path.substring(0, path.lastIndexOf('/'));
 
-      // Set a flag indicating that the pop-up has been shown
-      localStorage.setItem('popupShown', 'true');
-  }
+      // Define the base path for images
+      var basePath;
 
-  // Hide the modal when the "Continue" button is clicked
-  continueButton.addEventListener('click', function () {
-      modal.style.display = 'none';
-  });
-
-  // Hide the modal when clicking outside the modal content
-  window.addEventListener('click', function (event) {
-      if (event.target === modal) {
-          modal.style.display = 'none';
+      // Check if the current path contains 'picture_info'
+      if (path.includes('/picture_info')) {
+          // If the current path contains 'picture_info', adjust the basePath accordingly
+          basePath = '../../src/assets/images/background/';
+      } else {
+          // If the current path does not contain 'picture_info', use the default path
+          basePath = '../src/assets/images/background/';
       }
-  });
+
+      // Define the image names
+      var imageNames = [
+          'tanksOnTheBeach.jpg',
+          'KasierLookingAtTheEiffelTower.jpg',
+          'KaiserByTheEiffelTower.jpg',
+          'tankBattleOnSnowyPlains.png',
+          'submarineBattle.png',
+          'tankInNoMansLand.jpg',
+          'tanksInTheDesert.png',
+          'rocketSilo.jpg',
+          'tanksInTheCity.jpg',
+          'tanksInTheWinter.jpg',
+          'airAndNavyBattle.jpg',
+          'airplanesOverAVillage.jpg',
+          'tanksInBadWeather.jpg',
+          'tanksAndAirCombo.jpg',
+          'NuclearAttackOnNYC.jpg',
+          'normandyLandings.png',
+          'aLoneTank.jpg',
+          'airplaneOverDestryoedLand.jpg',
+          'tankInSovietWinter.jpg',
+      ];
+
+      // Create the full image paths
+      var backgroundImages = imageNames.map(function(name) {
+          return 'url(' + basePath + name + ')';
+      });
+
+      // Get reference to the body element of the HTML document
+      var bodyElement = document.body;
+
+      // Initialize currentIndex to keep track of the current background index
+      var currentIndex = -1;
+
+      // Function to generate a random index for the backgroundImages array
+      function getRandomIndex() {
+          var newIndex;
+
+          // Ensure the new index is different from the current index
+          do {
+              newIndex = Math.floor(Math.random() * backgroundImages.length);
+          } while (newIndex === currentIndex);
+
+          // Update currentIndex with the new index
+          currentIndex = newIndex;
+
+          // Return the new index
+          return currentIndex;
+      }
+
+      // Function to change the background of the body element
+      function changeBackground() {
+          // Get a random index using the getRandomIndex function
+          var randomIndex = getRandomIndex();
+
+          // Set the background image of the body element to the selected image
+          bodyElement.style.backgroundImage = backgroundImages[randomIndex];
+      }
+
+      // Change the background every 10 seconds (10000 milliseconds) using setInterval
+      setInterval(changeBackground, 10000);
+  }
 });
 
-// Get the current path
-var path = window.location.pathname;
-path = path.substring(0, path.lastIndexOf('/'));
-
-// Define the base path for images
-var basePath;
-
-// Check if the current path contains 'picture_info'
-if (path.includes('/picture_info')) {
-  // If the current path contains 'picture_info', adjust the basePath accordingly
-  basePath = '../../src/assets/images/background/';
-} else {
-  // If the current path does not contain 'picture_info', use the default path
-  basePath = '../src/assets/images/background/';
-}
-
-// Define the image names
-var imageNames = [
-  'tanksOnTheBeach.jpg',
-  'KasierLookingAtTheEiffelTower.jpg',
-  'KaiserByTheEiffelTower.jpg',
-  'tankBattleOnSnowyPlains.png',
-  'submarineBattle.png',
-  'tankInNoMansLand.jpg',
-  'tanksInTheDesert.png',
-  'rocketSilo.jpg',
-  'tanksInTheCity.jpg',
-  'tanksInTheWinter.jpg',
-  'airAndNavyBattle.jpg',
-  'airplanesOverAVillage.jpg',
-  'tanksInBadWeather.jpg',
-  'tanksAndAirCombo.jpg',
-  'NuclearAttackOnNYC.jpg',
-  'normandyLandings.png',
-  'aLoneTank.jpg',
-  'airplaneOverDestryoedLand.jpg',
-  'tankInSovietWinter.jpg',
-];
-
-// Create the full image paths
-var backgroundImages = imageNames.map(function(name) {
-  return 'url(' + basePath + name + ')';
-});
-
-// Get reference to the body element of the HTML document
-var bodyElement = document.body;
-
-// Initialize currentIndex to keep track of the current background index
-var currentIndex = -1;
-
-// Function to generate a random index for the backgroundImages array
-function getRandomIndex() {
-  var newIndex;
-
-  // Ensure the new index is different from the current index
-  do {
-      newIndex = Math.floor(Math.random() * backgroundImages.length);
-  } while (newIndex === currentIndex);
-
-  // Update currentIndex with the new index
-  currentIndex = newIndex;
-
-  // Return the new index
-  return currentIndex;
-}
-
-// Function to change the background of the body element
-function changeBackground() {
-  // Get a random index using the getRandomIndex function
-  var randomIndex = getRandomIndex();
-
-  // Set the background image of the body element to the selected image
-  bodyElement.style.backgroundImage = backgroundImages[randomIndex];
-}
-
-// Change the background every 10 seconds (10000 milliseconds) using setInterval
-setInterval(changeBackground, 10000);
 
 // Array of links with associated weights
 var links = [
@@ -155,3 +135,11 @@ for (var i = 0; i < testsCount; i++)
 }
 
 experiment(); // Execute the experiment
+
+document.getElementById('settingsButton').addEventListener('click', function() {
+  document.getElementById('settingsOverlay').style.display = 'flex';
+});
+
+document.getElementById('closeButton').addEventListener('click', function() {
+  document.getElementById('settingsOverlay').style.display = 'none';
+});

@@ -7,7 +7,7 @@
     <!-- Title of the webpage -->
     <title>Picture Gallery</title>
     <!-- Link to CSS stylesheet -->
-    <link rel="stylesheet" href="../src/assets/css/style.css">
+    <link id="theme-link" rel="stylesheet" href="../src/assets/css/style.css">
     <!-- Shortcut icon for the webpage -->
     <link rel="shortcut icon" href="../src/assets/images/icons/favicon.ico" type="image/x-icon">
     <!-- Script link for JavaScript file with 'defer' attribute -->
@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="https://unpkg.com/simplebar@5.3.0/dist/simplebar.min.css" integrity="sha384-CaZ9HRrOe1XpcaGkGyOT4yFc1EAAbTwQ9j6iZt0ewhucMuh1iZDrPOnGjbb4SSt3" crossorigin="anonymous">
     <!-- Script link for SimpleBar JavaScript file with 'defer' attribute -->
     <script src="https://unpkg.com/simplebar@5.3.0/dist/simplebar.min.js" integrity="sha384-oM5U7HaoT1uFyCMwe4FNjJ5MUEt/IGgF8nZG6K8M/A9fIpA3Sz4ri2thQqU6qBsp" crossorigin="anonymous" defer></script>
+    <script src="../src/assets/js/theme-switcher.js" defer></script>
 </head>
 <body>
     <!-- Header section -->
@@ -138,5 +139,22 @@
             </div>
         </div>
         
+        <button id="settingsButton">
+            <img id="settingsImage" src="../src/assets/images/icons/settings_icon.png" alt="Settings Icon">
+        </button>
+        
+        <div id="settingsOverlay">
+            <div id="settingsWindow">
+                <h2 class="settingsTitle">Settings</h2>
+                <div class="toggle-switch">
+                    <h2>Theme:</h2>
+                    <input type="checkbox" id="theme-switch">
+                    <label for="theme-switch"></label>
+                </div>
+                <button id="closeButton">
+                    <img src="../src/assets/images/icons/x.png" alt="Close Icon">
+                </button>            
+            </div>
+        </div>
   </body>
 </html>

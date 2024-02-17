@@ -1,0 +1,276 @@
+/* Reset default styles for all elements */
+* {
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+    font-family: Arial, Helvetica, sans-serif; /* Set default font family */
+}
+
+/* Styles for the body element */
+body {
+    background-image: url("../images/background/KasierLookingAtTheEiffelTower.jpg"); /* Background image */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    background-attachment: fixed; /* Fix the background image */
+    background-size: cover; /* Cover the entire background */
+    transition: background-image 2s ease-in-out; /* Transition effect for background image */
+}
+
+/* Styles for elements with the class 'flex-container' inside the body */
+body .flex-container {
+    display: flex; /* Make it a flex container */
+    justify-content: space-between; /* Distribute space evenly between flex items */
+    align-items: center; /* Center align the content vertically */
+    margin-top: 2vh; /* Margin */
+}
+
+/* Styles for elements with the class 'hoidleNav' inside the body */
+body .hoidleNav {
+    margin: 0 40vh; /* Margin */
+}
+
+/* Combined class selector for elements with both classes 'flex-container' and 'hoidleNav' */
+.flex-container.hoidleNav {
+    margin-top: 2vh; /* Margin */
+}
+
+/* Styles for the settings button */
+#settingsButton {
+    background: none; /* No background */
+    border: none; /* No border */
+    cursor: pointer; /* Cursor style */
+    position: absolute; /* Positioning */
+    top: 0.5vh; /* Distance from the top */
+    right: 1vh; /* Distance from the right */
+}
+
+/* Styles for the settings image */
+#settingsImage {
+    max-width: 10vh; /* Maximum width */
+    max-height: 10vh; /* Maximum height */
+    width: 10vh; /* Width */
+    height: 10vh; /* Height */
+}
+
+/* Styles for the settings overlay */
+#settingsOverlay {
+    position: fixed; /* Fixed position */
+    top: 0; /* Distance from the top */
+    left: 0; /* Distance from the left */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    display: none; /* Initially hidden */
+    justify-content: center; /* Center align content horizontally */
+    align-items: center; /* Center align content vertically */
+    z-index: 1000; /* Stack order */
+}
+
+/* Styles for the settings window */
+#settingsWindow {
+    background-color: white; /* Background color */
+    position: relative; /* Positioning */
+    border-radius: 1vh; /* Border radius */
+    border: black 0.5vh solid; /* Border style */
+    margin: 2vh 5vh 1vh; /* Margin */
+    padding: 10vh 5vh 2vh 5vh; /* Padding */
+    position: relative; /* Positioning */
+    max-width: 20vw; /* Maximum width */
+    max-height: 70vh; /* Maximum height */
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+}
+
+/* Styles for paragraphs inside the settings window */
+#settingsWindow p {
+    max-width: 100%; /* Set maximum width for the paragraph */
+    word-wrap: break-word; /* Allow the paragraph to wrap text */
+}
+
+/* Styles for the toggle switch */
+.toggle-switch {
+    display: inline-flex; /* Use inline-flex display to align items horizontally */
+    align-items: center; /* Align items vertically */
+}
+
+/* Hide the input element of the toggle switch */
+.toggle-switch input {
+    display: none; /* Hide the input element */
+}
+
+/* Styles for the toggle switch label */
+.toggle-switch label {
+    display: block; /* Display as block */
+    position: relative; /* Positioning */
+    cursor: pointer; /* Cursor style */
+    width: 6vh; /* Width */
+    height: 3.4vh; /* Height */
+    background-color: white; /* Background color */
+    border-radius: 3.4vh; /* Border radius */
+    transition: background-color 0s; /* Transition effect */
+}
+
+/* Styles for the unchecked state of the toggle switch */
+.toggle-switch input:not(:checked) + label {
+    margin-left: 1vh; /* Margin */
+    background-color: white; /* Background color */
+    border: 0.3vh solid black; /* Border style */
+}
+
+/* Styles for the toggle switch label before */
+.toggle-switch label:before {
+    content: ''; /* Empty content */
+    position: absolute; /* Positioning */
+    left: 0.2vh; /* Distance from the left */
+    top: 0.2vh; /* Distance from the top */
+    width: 2.8vh; /* Width */
+    height: 2.8vh; /* Height */
+    background-image: url('../images/icons/light-icon.png'); /* Background image */
+    background-size: cover; /* Cover the entire background */
+    border-radius: 50%; /* Border radius */
+    transition: transform 0.3s; /* Transition effect */
+}
+
+/* Styles for the checked state of the toggle switch */
+.toggle-switch input:checked + label:before {
+    transform: translateX(2.6vh); /* Translate horizontally */
+    background-image: url('../images/icons/dark-icon.png');  /* Background image */
+    content: ''; /* Empty content */
+}
+
+/* Styles for the settings title */
+.settingsTitle {
+    font-size: 4vh; /* Font size */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Font family */
+    text-align: center; /* Text alignment */
+    margin-top: 1vh; /* Margin from the top */
+    position: absolute; /* Positioning */
+    top: 1vh; /* Distance from the top */
+    left: 50%; /* Distance from the left */
+    transform: translateX(-50%); /* Translate horizontally */
+    width: 100%; /* Full width */
+}
+
+/* Styles for the close button */
+#closeButton {
+    background: none; /* No background */
+    border: none; /* No border */
+    position: absolute; /* Positioning */
+    top: 1vh; /* Distance from the top */
+    right: 1vh; /* Distance from the right */
+    cursor: pointer; /* Cursor style */
+}
+
+/* Styles for the close button image */
+#closeButton img {
+    max-width: 3vh; /* Maximum width */
+    max-height: 3vh; /* Maximum height */
+    width: 3vh; /* Width */
+    height: 3vh; /* Height */
+}
+
+/* Styles for the navigation bar */
+body nav {
+    border: black 0.75vh solid; /* Border style */
+    border-radius: 2vh; /* Border radius */
+    margin: 20vh 50vh 10vh; /* Margin */
+}
+
+/* Styles for the top navigation bar */
+body nav .topnav {
+    overflow: hidden; /* Hide overflowing content */
+    border-radius: 1vh; /* Border radius */
+    width: 100%; /* Full width */
+    background-color: #ddd; /* Background color */
+    border-top: 0; /* Remove top border */
+    display: flex; /* Make it a flex container */
+}
+
+/* Styles for links in the navigation bar */
+body nav .topnav a {
+    display: flex; /* Make it a flex container */
+    justify-content: center; /* Center align the content horizontally */
+    align-items: center; /* Center align the content vertically */
+    float: left; /* Float the elements to the left */
+    color: black; /* Text color */
+    padding: 1.5vh 1.7vh; /* Padding */
+    text-decoration: none; /* Remove underline */
+    font-size: 2.5vh; /* Font size */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font family */
+}
+
+/* Styles for specific link widths */
+body nav .topnav .btn-width {
+    box-sizing: border-box; /* Include border and padding in the element's total width and height */
+    width: 25%; /* Width */
+}
+
+body nav .topnav .width {
+    box-sizing: border-box; /* Include border and padding in the element's total width and height */
+    width: 20%; /* Width */
+}
+
+/* Styles for special links */
+body nav .topnav .special,
+body nav .topnav .special-hoidle {
+    box-sizing: border-box; /* Include border and padding in the element's total width and height */
+    width: 30%; /* Width */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Font family */
+    font-size: 3vh; /* Font size */
+    color: black; /* Text color */
+    border-left: black 0.5vh solid; /* Left border */
+    border-right: black 0.5vh solid; /* Right border */
+    background-color: lightgoldenrodyellow; /* Background color */
+}
+
+/* Styles for specific width of special-hoidle links */
+body nav .topnav .special-hoidle {
+    width: 50%; /* Width */
+}
+
+/* Styles for active links */
+body nav .topnav .active {
+    background-color: lightgreen; /* Background color */
+    color: black; /* Text color */
+}
+
+/* Styles for link hover */
+body nav .topnav a:hover {
+    background-color: gray; /* Background color on hover */
+    color: black; /* Text color on hover */
+}
+
+/* Styles for special links on hover */
+body nav .topnav .special:hover,
+body nav .topnav .special-hoidle:hover {
+    background-color: blue; /* Background color on hover */
+    color: white; /* Text color on hover */
+}
+
+/* Styles for the main section */
+.mainPart {
+    background-color: antiquewhite; /* Background color */
+    opacity: 75%; /* Opacity */
+    border: black 0.5vh solid; /* Border style */
+    border-radius: 3vh; /* Border radius */
+    margin: 2vh 5vh 1vh; /* Margin */
+    padding: 1vh; /* Padding */
+    overflow-y: auto; /* Enable vertical scrollbar when needed */
+    max-height: 70vh; /* Maximum height */
+}
+
+/* Styles for the "Work In Progress" text */
+.mainPart .WIP {
+    font-size: 15vh; /* Font size */
+    text-align: center; /* Text alignment */
+}
+
+/* Styles for scrollbar */
+.mainPart::-webkit-scrollbar {
+    width: 1.2vh; /* Width */
+}
+
+.mainPart::-webkit-scrollbar-thumb {
+    background-color: #888; /* Background color */
+}
+
+.mainPart::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Background color */
+}

@@ -44,7 +44,25 @@ if (path.includes('/picture_info')) {
 
 // Define the image names
 var imageNames = [
-// Array containing image names
+  'tanksOnTheBeach.jpg',
+  'KasierLookingAtTheEiffelTower.jpg',
+  'KaiserByTheEiffelTower.jpg',
+  'tankBattleOnSnowyPlains.png',
+  'submarineBattle.png',
+  'tankInNoMansLand.jpg',
+  'tanksInTheDesert.png',
+  'rocketSilo.jpg',
+  'tanksInTheCity.jpg',
+  'tanksInTheWinter.jpg',
+  'airAndNavyBattle.jpg',
+  'airplanesOverAVillage.jpg',
+  'tanksInBadWeather.jpg',
+  'tanksAndAirCombo.jpg',
+  'NuclearAttackOnNYC.jpg',
+  'normandyLandings.png',
+  'aLoneTank.jpg',
+  'airplaneOverDestryoedLand.jpg',
+  'tankInSovietWinter.jpg',
 ];
 
 // Create the full image paths

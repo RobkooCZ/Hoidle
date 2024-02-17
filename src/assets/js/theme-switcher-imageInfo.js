@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Set the initial theme based on the saved preference, or default to light theme
     if (savedTheme === "dark") {
         themeSwitch.checked = true;
-        themeLink.setAttribute("href", "../../src/assets/css/dark-infoStyle.css");
+        themeLink.setAttribute("href", "../../src/assets/css/legacy-darkInfoStyle.css");
         img.setAttribute("src", "../../src/assets/images/icons/x-white.png");
     }
 
@@ -18,12 +18,12 @@ document.addEventListener("DOMContentLoaded", function() {
     themeSwitch.addEventListener("change", function() {
         location.reload();
         if (themeSwitch.checked) {
-            themeLink.setAttribute("href", "../../src/assets/css/dark-infoStyle.css");
+            themeLink.setAttribute("href", "../../src/assets/css/legacy-darkInfoStyle.css");
             img.setAttribute("src", "../../src/assets/images/icons/x-white.png");
             // Save theme preference to localStorage
             localStorage.setItem("theme", "dark");
         } else {
-            themeLink.setAttribute("href", "../../src/assets/css/infoStyle.css");
+            themeLink.setAttribute("href", "../../src/assets/css/legacy-lightInfoStyle.css");
             img.setAttribute("src", "../../src/assets/images/icons/x.png");
             // Save theme preference to localStorage
             localStorage.setItem("theme", "light");

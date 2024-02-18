@@ -331,10 +331,10 @@ body nav .topnav .special-hoidle:hover {
 
 #content {
     background-color: black; /* Background color */
-    opacity: 75%; /* Opacity */
+    opacity: 90%; /* Opacity */
     border: white 0.5vh solid; /* Border style */
     border-radius: 3vh; /* Border radius */
-    margin: 2vh 5vh 1vh 2vh; /* Margin */
+    margin: 4vh 5vh 1vh 2vh; /* Margin */
     padding: 1vh; /* Padding */
     overflow-y: auto; /* Enable vertical scrollbar when needed */
     max-height: 70vh; /* Maximum height */
@@ -344,6 +344,11 @@ body nav .topnav .special-hoidle:hover {
     font-size: 2.5vh;
 }
 
+.arrow {
+    width: 100%; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
 .result {
     display: table-row; /* Use table row for each result */
 }
@@ -351,4 +356,51 @@ body nav .topnav .special-hoidle:hover {
 .result div {
     display: table-cell; /* Use table cell for each column */
     padding: 0.5em 0.5em; /* Padding for each cell */
+}
+
+.window {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    padding: 2vh;
+    border: white 1vh solid;
+    border-radius: 3vh;
+    z-index: 1000;
+    max-width: 50vh;
+    color: white;
+    font-size: 5vh;
+}
+
+.close-button {
+    position: absolute;
+    right: 2vh;
+    top: 1vh;
+    width: 2vh;
+    cursor: pointer;
+    font-size: 2vh;
+}
+
+.window-content {
+    margin-top: 2vh;
+}
+
+.error-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ff9999; /* Light red */
+    color: #990000; /* Dark red */
+    padding: 1vh 2vh;
+    border-radius: 0.5vh;
+    box-shadow: 0 0 1vh rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Additional styles for animation */
+.error-message.hidden {
+    opacity: 0;
 }

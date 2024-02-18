@@ -105,14 +105,9 @@ body .hoidleNav {
     height: 3.4vh; /* Height */
     background-color: black; /* Background color */
     border-radius: 3.4vh; /* Border radius */
+    border: 0.3vh solid white;
     transition: background-color 0s; /* Transition effect */
-}
-
-/* Styles for the unchecked state of the toggle switch */
-.toggle-switch input:not(:checked) + label {
-    margin-left: 1vh; /* Margin */
-    border: 0.3vh solid white; /* Border style */
-    background-color: black; /* Background color */
+    margin-left: 1vh; /* Margin from the left */
 }
 
 /* Styles for the toggle switch label before */

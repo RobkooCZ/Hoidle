@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the webpage -->
+    <title>Contact & Info</title>
+    <!-- Link to CSS stylesheet -->
+    <link id="theme-link" rel="stylesheet" href="../src/assets/css/hoidle-lightTheme.css">
+    <!-- Shortcut icon for the webpage -->
+    <link rel="shortcut icon" href="../src/assets/images/icons/favicon.ico" type="image/x-icon">
+    <!-- Script link for JavaScript file with 'defer' attribute -->
+    <script src="../src/assets/js/scripts.js" defer></script>
+    <script src="../src/assets/js/theme-switcher-hoidle.js" defer></script>
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <nav class="flex-container hoidleNav">
+        <div class="topnav">
+            <!-- Links to different sections -->
+            <a class="btn-width" href="basic_info.html">Legacy</a>
+            <a class="special-hoidle width" href="hoidle.html">HOIDLE</a>
+            <a class="btn-width" href="contactHoidle.html">Contact & Info</a>
+        </div>
+    </nav>
+
+    <!-- Main section for contact information -->
+    <div class="mainPart">
+        <!-- Paragraph containing contact info -->
+        <p class="Contact">The entire webpage was made by Robert Bilík.
+            <br><br><b>Contact info:</b><br>Email: robert.bilik@spsehavirov.cz<br>Youtube channel: <a href="https://www.youtube.com/@robkooyt" target="_blank">RobkooYT</a><br>Reddit: <a href="https://www.reddit.com/user/u_Robkoo" target="_blank">u_Robkoo</a><br>Discord: elilover69 (Formerly Robkoo)<br>Github: <a href="https://github.com/RobkooCZ" target="_blank">RobkooCZ</a>
+            <br><br>The website works for Edge, Mozzila, Opera GX & Opera and Chrome. It's made with HTML5, CSS and JS. 
+        </p>
+    </div>
+
+    <button id="settingsButton">
+        <img id="settingsImage" src="../src/assets/images/icons/settings_icon.png" alt="Settings Icon">
+    </button>
+    
+    <div id="settingsOverlay">
+        <div id="settingsWindow">
+            <h2 class="settingsTitle">Settings</h2>
+            <div class="toggle-switch">
+                <h2>Theme:</h2>
+                <input type="checkbox" id="theme-switch">
+                <label for="theme-switch"></label>
+            </div>
+            <button id="closeButton">
+                <img src="../src/assets/images/icons/x.png" alt="Close Icon">
+            </button>            
+        </div>
+    </div>
+</body>
+</html>

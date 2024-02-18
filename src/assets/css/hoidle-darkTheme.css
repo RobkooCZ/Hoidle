@@ -89,6 +89,10 @@ body .hoidleNav {
 .toggle-switch {
     display: inline-flex; /* Use inline-flex display to align items horizontally */
     align-items: center; /* Align items vertically */
+
+    h2 {
+        font-size: 3vh; /* Font size */
+    }
 }
 
 /* Hide the input element of the toggle switch */
@@ -257,6 +261,17 @@ body nav .topnav .special-hoidle:hover {
 .mainPart .WIP {
     font-size: 15vh; /* Font size */
     text-align: center; /* Text alignment */
+}
+
+.mainPart .Contact{
+    font-size: 3vh; /* Font size */
+    text-align: center; /* Text alignment */
+    color: white; /* Text color */
+}
+
+.mainPart .Contact a{
+    text-decoration: none; /* Remove underline */
+    color: yellow; /* Text color */
 }
 
 /* Styles for scrollbar */

@@ -262,6 +262,12 @@ body nav .topnav .special-hoidle:hover {
     text-align: center; /* Text alignment */
 }
 
+.mainPart .contact{
+    font-size: 3vh; /* Font size */
+    text-align: center; /* Text alignment */
+    color: black;
+}
+
 /* Styles for scrollbar */
 .mainPart::-webkit-scrollbar {
     width: 1.2vh; /* Width */

@@ -227,8 +227,8 @@ body nav .topnav .special-hoidle {
 
 /* Styles for active links */
 body nav .topnav .active {
-    background-color: lightgreen; /* Background color */
-    color: black; /* Text color */
+    background-color: darkgreen; /* Background color */
+    color: white; /* Text color */
 }
 
 /* Styles for link hover */

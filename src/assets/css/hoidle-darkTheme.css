@@ -286,3 +286,45 @@ body nav .topnav .special-hoidle:hover {
 .mainPart::-webkit-scrollbar-track {
     background-color: #f1f1f1; /* Background color */
 }
+
+#countryInputBox{
+    color: white;
+    background-color: black;
+    border: white 0.4vh solid;
+    padding: 1vh;
+    font-size: 2.5vh;
+    border-radius: 0.3vh;
+    margin-left: 75vh;
+}
+
+#countryInputBox::placeholder{
+    color: gainsboro;
+    font-size: 2.5vh;
+}
+
+#countryInputBox:focus{
+    outline: none;
+}
+
+#countryInputBox:hover{
+    background-color: #2e2e2e;
+}
+
+#countrySubmitButton{
+    background-color: black;
+    color: white;
+    border: white 0.4vh solid;
+    padding: 1vh;
+    font-size: 2.5vh;
+    border-radius: 0.3vh;
+    cursor: pointer;
+    margin-left: 2vh;
+}
+
+#countrySubmitButton:hover{
+    background-color: #2e2e2e;
+}
+
+#countryInputBox, #countrySubmitButton{
+    margin-top: 5vh;
+}

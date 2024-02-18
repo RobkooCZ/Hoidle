@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Czechoslovakia",
+        "continent": "Europe",
+        "startingNation": "Yes",
+        "government": "Democracy",
+        "strength": "Minor"
+    },
+    {
+        "id": 2,
+        "name": "Poland",
+        "continent": "Europe",
+        "startingNation": "Yes",
+        "government": "Non-Aligned",
+        "strength": "Minor"
+    },
+    {
+        "id": 3,
+        "name": "German Reich",
+        "continent": "Europe",
+        "startingNation": "Yes",
+        "government": "Fascism",
+        "strength": "Major"
+    }
+]

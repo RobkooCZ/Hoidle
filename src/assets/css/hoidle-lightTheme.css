@@ -262,10 +262,15 @@ body nav .topnav .special-hoidle:hover {
     text-align: center; /* Text alignment */
 }
 
-.mainPart .contact{
+.mainPart .Contact{
     font-size: 3vh; /* Font size */
     text-align: center; /* Text alignment */
-    color: black;
+    color: black; /* Text color */
+}
+
+.mainPart .Contact a{
+    text-decoration: none; /* Remove underline */
+    color: red; /* Text color */
 }
 
 /* Styles for scrollbar */

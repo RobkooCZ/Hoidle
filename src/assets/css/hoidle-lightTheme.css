@@ -332,7 +332,7 @@ body nav .topnav .special-hoidle:hover {
     background-color: antiquewhite; /* Background color */
     opacity: 90%; /* Opacity */
     border: black 0.5vh solid; /* Border style */
-    margin: 2vh 5vh 1vh 2vh; /* Margin */
+    margin: 4vh 5vh 1vh 2vh; /* Margin */
     overflow-y: auto; /* Enable vertical scrollbar when needed */
     max-height: 70vh; /* Maximum height */
     color: black; /* Text color */

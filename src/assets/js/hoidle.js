@@ -119,7 +119,7 @@ fetch('../src/assets/js/json/database.json')
                 document.getElementById("content").appendChild(resultElement);
 
                 // Fetch data for the hidden country
-                const hiddenCountry = "Nicaragua" // Change this to the hidden country
+                const hiddenCountry = "Peru" // Temporary hidden country
                 try {
                     const hiddenCountryData = await fetchHiddenCountryData(hiddenCountry);
 
@@ -214,17 +214,50 @@ fetch('../src/assets/js/json/database.json')
             }
         });
 
-        // Function to compare the guessed country's data with the hidden country's data and change background colors accordingly
-        function compareAndChangeBackgroundColor(resultElement, selector, guessedValue, hiddenValue) {
-            const element = resultElement.querySelector(selector);
-            const theme = localStorage.getItem("theme") || "light"; // Get theme from localStorage or default to light
+        
+// Function to compare the guessed country's data with the hidden country's data and change background colors accordingly
+function compareAndChangeBackgroundColor(resultElement, selector, guessedValue, hiddenValue) {
+    const element = resultElement.querySelector(selector);
+    const theme = localStorage.getItem("theme") || "light"; // Get theme from localStorage or default to light
 
-            if (element.textContent.toLowerCase() === guessedValue.toLowerCase() && guessedValue.toLowerCase() === hiddenValue.toLowerCase()) {
-                element.style.backgroundColor = (theme === "dark") ? 'darkgreen' : 'green';
+    if (element.textContent.toLowerCase() === guessedValue.toLowerCase() && guessedValue.toLowerCase() === hiddenValue.toLowerCase()) {
+        element.style.backgroundColor = (theme === "dark") ? 'darkgreen' : 'green';
+    } else {
+        element.style.backgroundColor = (theme === "dark") ? 'darkred' : 'red';
+    }
+    element.style.backgroundImage = 'none'; // Ensure no background image is applied
+
+    if (selector === '.states' || selector === '.corePop') {
+        const guessedNumber = parseInt(guessedValue.replace(/\D/g, ''), 10); // Extract number from the guessed value
+        const hiddenNumber = parseInt(hiddenValue.replace(/\D/g, ''), 10); // Extract number from the hidden value
+
+        if (!isNaN(guessedNumber) && !isNaN(hiddenNumber)) {
+            if (guessedNumber > hiddenNumber) {
+                const downArrowPath = (theme === "dark") ? 'url(../src/assets/images/icons/downArrow-dark.png)' : 'url(../src/assets/images/icons/downArrow.png)';
+                element.style.backgroundImage = downArrowPath;
+                // opacity of the image to 50%
+            } else if (guessedNumber < hiddenNumber) {
+                const upArrowPath = (theme === "dark") ? 'url(../src/assets/images/icons/upArrow-dark.png)' : 'url(../src/assets/images/icons/upArrow.png)';
+                element.style.backgroundImage = upArrowPath;
+                element.style.backgroundImage.opacity = '0.5';
             } else {
-                element.style.backgroundColor = (theme === "dark") ? 'darkred' : 'red';
+                // If the values are the same, turn the background green and remove the arrow
+                element.style.backgroundImage = 'none';
+                element.style.backgroundColor = (theme === "dark") ? 'darkgreen' : 'green';
             }
+            element.style.backgroundRepeat = 'no-repeat';
+            element.style.backgroundPosition = 'center';
+            element.style.backgroundSize = '50%';
         }
+        // Zoom in a bit more for corePop
+        if (selector === '.corePop') {
+            element.style.backgroundSize = '24%';
+        }
+    }
+}
+
+
+
 
     })
     .catch(error => {

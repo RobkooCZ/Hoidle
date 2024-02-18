@@ -19,7 +19,10 @@ fetch('../src/assets/js/json/database.json')
         // Function to search the database based on input and display the result
         function searchDatabase(query) {
             query = query.toLowerCase(); // Convert the query to lowercase for case-insensitive search
-            const result = database.find(item => item.name.toLowerCase() === query);
+            const result = database.find(item => 
+                item.name.toLowerCase() === query || 
+                (item.otherName && item.otherName.toLowerCase() === query)
+            );
             return result;
         }
 
@@ -116,7 +119,7 @@ async function handleInput() {
         document.getElementById("content").appendChild(resultElement);
 
         // Fetch data for the hidden country
-        const hiddenCountry = "German Reich"; // Change this to the hidden country
+        const hiddenCountry = "Nicaragua" // Change this to the hidden country
         try {
             const hiddenCountryData = await fetchHiddenCountryData(hiddenCountry);
 

@@ -32,6 +32,7 @@
     {
         "id": 4,
         "name": "Sultanate of Aussa",
+        "otherName": "Aussa",
         "continent": "Africa",
         "startingNation": "Yes",
         "government": "Non-Aligned",
@@ -102,6 +103,7 @@
     {
         "id": 11,
         "name": "British Malaya",
+        "otherName": "Malaya",
         "continent": "Asia",
         "startingNation": "Yes",
         "government": "Democracy",
@@ -112,6 +114,7 @@
     {
         "id": 12,
         "name": "British Raj",
+        "otherName": "India",
         "continent": "Asia",
         "startingNation": "Yes",
         "government": "Non-Aligned",
@@ -132,6 +135,7 @@
     {
         "id": 14,
         "name": "Dominion of Canada",
+        "otherName": "Canada",
         "continent": "North America",
         "startingNation": "Yes",
         "government": "Democracy",
@@ -232,6 +236,7 @@
     {
         "id": 24,
         "name": "Dutch East Indies",
+        "otherName": "Indonesia",
         "continent": "Oceania",
         "startingNation": "Yes",
         "government": "Democracy",
@@ -302,6 +307,7 @@
     {
         "id": 31,
         "name": "German Reich",
+        "otherName": "Germany",
         "continent": "Europe",
         "startingNation": "Yes",
         "government": "Fascist",
@@ -312,6 +318,7 @@
     {
         "id": 32,
         "name": "Kingdom of Greece",
+        "otherName": "Greece",
         "continent": "Europe",
         "startingNation": "Yes",
         "government": "Non-Aligned",
@@ -362,6 +369,7 @@
     {
         "id": 37,
         "name": "Kingdom of Hungary",
+        "otherName": "Hungary",
         "continent": "Europe",
         "startingNation": "Yes",
         "government": "Non-Aligned",
@@ -693,6 +701,7 @@
     {
         "id": 70,
         "name": "Soviet Union",
+        "otherName": "USSR",
         "continent": "Europe",
         "startingNation": "Yes",
         "government": "Communist",
@@ -763,6 +772,7 @@
     {
         "id": 77,
         "name": "United Kingdom",
+        "otherName": "Britain",
         "continent": "Europe",
         "startingNation": "Yes",
         "government": "Democracy",
@@ -773,6 +783,7 @@
     {
         "id": 78,
         "name": "United States",
+        "otherName": "USA",
         "continent": "North America",
         "startingNation": "Yes",
         "government": "Democracy",

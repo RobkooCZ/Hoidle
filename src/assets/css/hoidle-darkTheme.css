@@ -333,9 +333,7 @@ body nav .topnav .special-hoidle:hover {
     background-color: black; /* Background color */
     opacity: 90%; /* Opacity */
     border: white 0.5vh solid; /* Border style */
-    border-radius: 3vh; /* Border radius */
     margin: 4vh 5vh 1vh 2vh; /* Margin */
-    padding: 1vh; /* Padding */
     overflow-y: auto; /* Enable vertical scrollbar when needed */
     max-height: 70vh; /* Maximum height */
     color: white; /* Text color */
@@ -403,4 +401,13 @@ body nav .topnav .special-hoidle:hover {
 /* Additional styles for animation */
 .error-message.hidden {
     opacity: 0;
+}
+
+.borderBottom {
+    border-bottom: 0.4vh solid white; /* Add bottom border */
+}
+
+.borders{
+    border: 0.4vh solid white; /* Add border */
+    border-bottom: none; /* Remove bottom border */
 }

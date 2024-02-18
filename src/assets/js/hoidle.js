@@ -90,14 +90,14 @@ fetch('../src/assets/js/json/database.json')
                     const headersElement = document.createElement("div");
                     headersElement.classList.add("result"); // Add CSS class for table row
                     headersElement.innerHTML = `
-                <div>Country</div>
-                <div>Continent</div>
-                <div>Starting Nation</div>
-                <div>Government</div>
-                <div>Strength</div>
-                <div>States</div>
-                <div>Core Population</div>
-            `;
+                <div class="borderBottom">Country</div>
+                <div class="borderBottom">Continent</div>
+                <div class="borderBottom">Starting Nation</div>
+                <div class="borderBottom">Government</div>
+                <div class="borderBottom">Strength</div>
+                <div class="borderBottom">States</div>
+                <div class="borderBottom">Core Population</div>
+                `;
                     document.getElementById("content").appendChild(headersElement);
                     headersAdded = true;
                 }
@@ -106,14 +106,14 @@ fetch('../src/assets/js/json/database.json')
                 const resultElement = document.createElement("div");
                 resultElement.classList.add("result"); // Add CSS class for table row
                 resultElement.innerHTML = `
-            <div class="name">${result.name}</div>
-            <div class="continent">${result.continent}</div>
-            <div class="startingNation">${result.startingNation}</div>
-            <div class="government">${result.government}</div>
-            <div class="strength">${result.strength}</div>
-            <div class="states">${result.states}</div>
-            <div class="corePop">${result["Core Population"]}</div>
-        `;
+                <div class="name borders">${result.name}</div>
+                <div class="continent borders">${result.continent}</div>
+                <div class="startingNation borders">${result.startingNation}</div>
+                <div class="government borders">${result.government}</div>
+                <div class="strength borders">${result.strength}</div>
+                <div class="states borders">${result.states}</div>
+                <div class="corePop borders">${result["Core Population"]}</div>
+                `;
 
                 // Append the result element to the content div
                 document.getElementById("content").appendChild(resultElement);
@@ -217,12 +217,15 @@ fetch('../src/assets/js/json/database.json')
         // Function to compare the guessed country's data with the hidden country's data and change background colors accordingly
         function compareAndChangeBackgroundColor(resultElement, selector, guessedValue, hiddenValue) {
             const element = resultElement.querySelector(selector);
+            const theme = localStorage.getItem("theme") || "light"; // Get theme from localStorage or default to light
+
             if (element.textContent.toLowerCase() === guessedValue.toLowerCase() && guessedValue.toLowerCase() === hiddenValue.toLowerCase()) {
-                element.style.backgroundColor = 'green'; // Change this to the desired background color
+                element.style.backgroundColor = (theme === "dark") ? 'darkgreen' : 'green';
             } else {
-                element.style.backgroundColor = 'red'; // Change this to the desired background color
+                element.style.backgroundColor = (theme === "dark") ? 'darkred' : 'red';
             }
         }
+
     })
     .catch(error => {
         console.error('Error fetching JSON:', error);

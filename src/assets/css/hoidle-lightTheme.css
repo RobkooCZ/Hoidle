@@ -332,9 +332,7 @@ body nav .topnav .special-hoidle:hover {
     background-color: antiquewhite; /* Background color */
     opacity: 90%; /* Opacity */
     border: black 0.5vh solid; /* Border style */
-    border-radius: 3vh; /* Border radius */
     margin: 2vh 5vh 1vh 2vh; /* Margin */
-    padding: 1vh; /* Padding */
     overflow-y: auto; /* Enable vertical scrollbar when needed */
     max-height: 70vh; /* Maximum height */
     color: black; /* Text color */
@@ -399,3 +397,11 @@ body nav .topnav .special-hoidle:hover {
     opacity: 0;
 }
 
+.borderBottom {
+    border-bottom: 0.4vh solid black; /* Add bottom border */
+}
+
+.borders{
+    border: 0.4vh solid black; /* Add border */
+    border-bottom: none; /* Remove bottom border */
+}

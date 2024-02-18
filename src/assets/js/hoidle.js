@@ -28,25 +28,64 @@ fetch('../src/assets/js/json/database.json')
         button.id = 'countrySubmitButton';
         button.textContent = 'Submit';
 
+        // Create a container div for input box and button
+        const inputContainer = document.createElement('div');
+        inputContainer.appendChild(inputBox);
+        inputContainer.appendChild(button);
+
+        // Append the input container above the content div
+        document.body.insertBefore(inputContainer, document.getElementById("content"));
+
+        // Variable to track if headers are already added
+        let headersAdded = false;
+
         // Function to handle button click or Enter key press
         function handleInput() {
             const country = inputBox.value.trim(); // Trim any leading or trailing whitespace
             const result = searchDatabase(country);
 
             if (result) {
+                // If headers are not added, create and append them
+                if (!headersAdded) {
+                    const headersElement = document.createElement("div");
+                    headersElement.classList.add("result"); // Add CSS class for table row
+                    headersElement.innerHTML = `
+                        <div>Country</div>
+                        <div>Continent</div>
+                        <div>Starting Nation</div>
+                        <div>Government</div>
+                        <div>Strength</div>
+                        <div>States</div>
+                        <div>Core Population</div>
+                    `;
+                    document.getElementById("content").appendChild(headersElement);
+                    headersAdded = true;
+                }
+                
                 // Display the result
                 const resultElement = document.createElement("div");
-                resultElement.textContent = `Country: ${result.name}, Continent: ${result.continent}, Starting Nation: ${result.startingNation}, Government: ${result.government}, Strength: ${result.strength}`;
+                resultElement.classList.add("result"); // Add CSS class for table row
+                resultElement.innerHTML = `
+                    <div>${result.name}</div>
+                    <div>${result.continent}</div>
+                    <div>${result.startingNation}</div>
+                    <div>${result.government}</div>
+                    <div>${result.strength}</div>
+                    <div>${result.states}</div>
+                    <div>${result["Core Population"]}</div>
+                `;
+                
+                // Append the result element to the content div
                 document.getElementById("content").appendChild(resultElement);
+                
+                // Reset input box background color and placeholder text
+                inputBox.style.backgroundColor = '';
+                inputBox.placeholder = 'Enter a country';
             } else {
                 // If the country is not found
-                const errorElement = document.createElement("div");
-                errorElement.textContent = "Country not found.";
-                document.getElementById("content").appendChild(errorElement);
+                inputBox.style.backgroundColor = 'rgba(255, 0, 0, 0.3)'; // Change background color
+                inputBox.placeholder = 'Country not found'; // Change placeholder text
             }
-
-            // Clear the input box value
-            inputBox.value = '';
         }
 
         // Add event listener for button click
@@ -58,10 +97,6 @@ fetch('../src/assets/js/json/database.json')
                 handleInput();
             }
         });
-
-        // Append the input box and button to the document body
-        document.getElementById("content").appendChild(inputBox);
-        document.getElementById("content").appendChild(button);
     })
     .catch(error => {
         console.error('Error fetching JSON:', error);

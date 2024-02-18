@@ -327,3 +327,27 @@ body nav .topnav .special-hoidle:hover {
 #countryInputBox, #countrySubmitButton{
     margin-top: 5vh;
 }
+
+#content {
+    background-color: antiquewhite; /* Background color */
+    opacity: 75%; /* Opacity */
+    border: black 0.5vh solid; /* Border style */
+    border-radius: 3vh; /* Border radius */
+    margin: 2vh 5vh 1vh 2vh; /* Margin */
+    padding: 1vh; /* Padding */
+    overflow-y: auto; /* Enable vertical scrollbar when needed */
+    max-height: 70vh; /* Maximum height */
+    color: black; /* Text color */
+    display: table; /* Use table layout */
+    width: 96%;
+    font-size: 2.5vh;
+}
+
+.result {
+    display: table-row; /* Use table row for each result */
+}
+
+.result div {
+    display: table-cell; /* Use table cell for each column */
+    padding: 0.5em 0.5em; /* Padding for each cell */
+}

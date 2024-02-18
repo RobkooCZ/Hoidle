@@ -1,26 +1,843 @@
 [
     {
         "id": 1,
+        "name": "Afghanistan",
+        "continent": "Asia",
+        "startingNation": "Yes",
+        "government": "Non-Aligned",
+        "strength": "Minor",
+        "states": "2",
+        "Core Population": "6.27M"
+    },
+    {
+        "id": 2,
+        "name": "Albania",
+        "continent": "Europe",
+        "startingNation": "Yes",
+        "government": "Non-Aligned",
+        "strength": "Minor",
+        "states": "3",
+        "Core Population": "1M"
+    },
+    {
+        "id": 3,
+        "name": "Argentina",
+        "continent": "South America",
+        "startingNation": "Yes",
+        "government": "Non-Aligned",
+        "strength": "Minor",
+        "states": "6",
+        "Core Population": "11.9M"
+    },
+    {
+        "id": 4,
+        "name": "Sultanate of Aussa",
+        "continent": "Africa",
+        "startingNation": "Yes",
+        "government": "Non-Aligned",
+        "strength": "Minor",
+        "states": "1",
+        "Core Population": "0.56M"
+    },
+    {
+        "id": 5,
+        "name": "Australia",
+        "continent": "Oceania",
+        "startingNation": "Yes",
+        "government": "Democracy",
+        "strength": "Minor",
+        "states": "15",
+        "Core Population": "6.55M"
+    },
+    {
+        "id": 6,
+        "name": "Austria",
+        "continent": "Europe",
+        "startingNation": "Yes",
+        "government": "Non-Aligned",
+        "strength": "Minor",
+        "states": "4",
+        "Core Population": "6.53M"
+    },
+    {
+        "id": 7,
+        "name": "Belgium",
+        "continent": "Europe",
+        "startingNation": "Yes",
+        "government": "Democracy",
+        "strength": "Minor",
+        "states": "10",
+        "Core Population": "8.13M"
+    },
+    {
+        "id": 8,
+        "name": "Bhutan",
+        "continent": "Asia",
+        "startingNation": "Yes",
+        "government": "Non-Aligned",
+        "strength": "Minor",
+        "states": "1",
+        "Core Population": "0.45M"
+    },
+    {
+        "id": 9,
+        "name": "Bolivia",
+        "continent": "South America",
+        "startingNation": "Yes",
+        "government": "Non-Aligned",
+        "strength": "Minor",
+        "states": "2",
+        "Core Population": "2.38M"
+    },
+    {
+        "id": 10,
+        "name": "Brazil",
+        "continent": "South America",
+        "startingNation": "Yes",
+        "government": "Non-Aligned",
+        "strength": "Minor",
+        "states": "12",
+        "Core Population": "40.27M"
+    },
+    {
+        "id": 11,
+        "name": "British Malaya",
+        "continent": "Asia",
+        "startingNation": "Yes",
+        "government": "Democracy",
+        "strength": "Minor",
+        "states": "2",
+        "Core Population": "3.78M"
+    },
+    {
+        "id": 12,
+        "name": "British Raj",
+        "continent": "Asia",
+        "startingNation": "Yes",
+        "government": "Non-Aligned",
+        "strength": "Minor",
+        "states": "26",
+        "Core Population": "350.52M"
+    },
+    {
+        "id": 13,
+        "name": "Bulgaria",
+        "continent": "Europe",
+        "startingNation": "Yes",
+        "government": "Non-Aligned",
+        "strength": "Minor",
+        "states": "4",
+        "Core Population": "6.08M"
+    },
+    {
+        "id": 14,
+        "name": "Dominion of Canada",
+        "continent": "North America",
+        "startingNation": "Yes",
+        "government": "Democracy",
+        "strength": "Minor",
+        "states": "23",
+        "Core Population": "10.20M"
+    },
+    {
+        "id": 15,
+        "name": "Chile",
+        "continent": "South America",
+        "startingNation": "Yes",
+        "government": "Democracy",
+        "strength": "Minor",
+        "states": "3",
+        "Core Population": "4.29M"
+    },
+    {
+        "id": 16,
+        "name": "China",
+        "continent": "Asia",
+        "startingNation": "Yes",
+        "government": "Non-Aligned",
+        "strength": "Minor",
+        "states": "22",
+        "Core Population": "339.99M"
+    },
+    {
+        "id": 17,
+        "name": "Colombia",
+        "continent": "South America",
+        "startingNation": "Yes",
+        "government": "Democracy",
+        "strength": "Minor",
+        "states": "3",
+        "Core Population": "7.99M"
+    },
+    {
+        "id": 18,
+        "name": "Communist China",
+        "continent": "Asia",
+        "startingNation": "Yes",
+        "government": "Communist",
+        "strength": "Minor",
+        "states": "1",
+        "Core Population": "7.01M"
+    },
+    {
+        "id": 19,
+        "name": "Costa Rica",
+        "continent": "North America",
+        "startingNation": "Yes",
+        "government": "Democracy",
+        "strength": "Minor",
+        "states": "1",
+        "Core Population": "0.5M"
+    },
+    {
+        "id": 20,
+        "name": "Cuba",
+        "continent": "North America",
+        "startingNation": "Yes",
+        "government": "Democracy",
+        "strength": "Minor",
+        "states": "1",
+        "Core Population": "3.61M"
+    },
+    {
+        "id": 21,
         "name": "Czechoslovakia",
         "continent": "Europe",
         "startingNation": "Yes",
         "government": "Democracy",
-        "strength": "Minor"
+        "strength": "Minor",
+        "states": "9",
+        "Core Population": "15.03M"
     },
     {
-        "id": 2,
+        "id": 22,
+        "name": "Denmark",
+        "continent": "Europe",
+        "startingNation": "Yes",
+        "government": "Democracy",
+        "strength": "Minor",
+        "states": "7",
+        "Core Population": "3.75M"
+    },
+    {
+        "id": 23,
+        "name": "Dominican Republic",
+        "continent": "North America",
+        "startingNation": "Yes",
+        "government": "Fascist",
+        "strength": "Minor",
+        "states": "1",
+        "Core Population": "1.26M"
+    },
+    {
+        "id": 24,
+        "name": "Dutch East Indies",
+        "continent": "Oceania",
+        "startingNation": "Yes",
+        "government": "Democracy",
+        "strength": "Minor",
+        "states": "8",
+        "Core Population": "60.76M"
+    },
+    {
+        "id": 25,
+        "name": "Ecuador",
+        "continent": "South America",
+        "startingNation": "Yes",
+        "government": "Democracy",
+        "strength": "Minor",
+        "states": "2",
+        "Core Population": "2.01M"
+    },
+    {
+        "id": 26,
+        "name": "El Salvador",
+        "continent": "North America",
+        "startingNation": "Yes",
+        "government": "Fascist",
+        "strength": "Minor",
+        "states": "1",
+        "Core Population": "1.44M"
+    },
+    {
+        "id": 27,
+        "name": "Estonia",
+        "continent": "Europe",
+        "startingNation": "Yes",
+        "government": "Non-Aligned",
+        "strength": "Minor",
+        "states": "5",
+        "Core Population": "1.11M"
+    },
+    {
+        "id": 28,
+        "name": "Ethiopia",
+        "continent": "Africa",
+        "startingNation": "Yes",
+        "government": "Non-Aligned",
+        "strength": "Minor",
+        "states": "10",
+        "Core Population": "9.90M"
+    },
+    {
+        "id": 29,
+        "name": "Finland",
+        "continent": "Europe",
+        "startingNation": "Yes",
+        "government": "Non-Aligned",
+        "strength": "Minor",
+        "states": "13",
+        "Core Population": "3.81M"
+    },
+    {
+        "id": 30,
+        "name": "France",
+        "continent": "Europe",
+        "startingNation": "Yes",
+        "government": "Democracy",
+        "strength": "Major",
+        "states": "75",
+        "Core Population": "42.20M"
+    },
+    {
+        "id": 31,
+        "name": "German Reich",
+        "continent": "Europe",
+        "startingNation": "Yes",
+        "government": "Fascist",
+        "strength": "Major",
+        "states": "23",
+        "Core Population": "65.47M"
+    },
+    {
+        "id": 32,
+        "name": "Kingdom of Greece",
+        "continent": "Europe",
+        "startingNation": "Yes",
+        "government": "Non-Aligned",
+        "strength": "Minor",
+        "states": "7",
+        "Core Population": "6.27M"
+    },
+    {
+        "id": 33,
+        "name": "Guangxi Clique",
+        "continent": "Asia",
+        "startingNation": "Yes",
+        "government": "Non-Aligned",
+        "strength": "Minor",
+        "states": "5",
+        "Core Population": "50.12M"
+    },
+    {
+        "id": 34,
+        "name": "Guatemala",
+        "continent": "North America",
+        "startingNation": "Yes",
+        "government": "Non-Aligned",
+        "strength": "Minor",
+        "states": "1",
+        "Core Population": "1.77M"
+    },
+    {
+        "id": 35,
+        "name": "Haiti",
+        "continent": "North America",
+        "startingNation": "Yes",
+        "government": "Democracy",
+        "strength": "Minor",
+        "states": "1",
+        "Core Population": "2.38M"
+    },
+    {
+        "id": 36,
+        "name": "Honduras",
+        "continent": "North America",
+        "startingNation": "Yes",
+        "government": "Democracy",
+        "strength": "Minor",
+        "states": "1",
+        "Core Population": "0.86M"
+    },
+    {
+        "id": 37,
+        "name": "Kingdom of Hungary",
+        "continent": "Europe",
+        "startingNation": "Yes",
+        "government": "Non-Aligned",
+        "strength": "Minor",
+        "states": "3",
+        "Core Population": "8.68M"
+    },
+    {
+        "id": 38,
+        "name": "Iceland",
+        "continent": "Europe",
+        "startingNation": "Yes",
+        "government": "Non-Aligned",
+        "strength": "Minor",
+        "states": "1",
+        "Core Population": "0.12M"
+    },
+    {
+        "id": 39,
+        "name": "Iran",
+        "continent": "Asia",
+        "startingNation": "Yes",
+        "government": "Non-Aligned",
+        "strength": "Minor",
+        "states": "12",
+        "Core Population": "12.59M"
+    },
+    {
+        "id": 40,
+        "name": "Iraq",
+        "continent": "Asia",
+        "startingNation": "Yes",
+        "government": "Democracy",
+        "strength": "Minor",
+        "states": "3",
+        "Core Population": "3.35M"
+    },
+    {
+        "id": 41,
+        "name": "Ireland",
+        "continent": "Europe",
+        "startingNation": "Yes",
+        "government": "Democracy",
+        "strength": "Minor",
+        "states": "3",
+        "Core Population": "2.97M"
+    },
+    {
+        "id": 42,
+        "name": "Italy",
+        "continent": "Europe",
+        "startingNation": "Yes",
+        "government": "Fascist",
+        "strength": "Major",
+        "states": "29",
+        "Core Population": "41.83M"
+    },
+    {
+        "id": 43,
+        "name": "Japan",
+        "continent": "Asia",
+        "startingNation": "Yes",
+        "government": "Fascist",
+        "strength": "Major",
+        "states": "24",
+        "Core Population": "64.77M"
+    },
+    {
+        "id": 44,
+        "name": "Latvia",
+        "continent": "Europe",
+        "startingNation": "Yes",
+        "government": "Non-Aligned",
+        "strength": "Minor",
+        "states": "5",
+        "Core Population": "1.96M"
+    },
+    {
+        "id": 45,
+        "name": "Liberia",
+        "continent": "Africa",
+        "startingNation": "Yes",
+        "government": "Democracy",
+        "strength": "Minor",
+        "states": "1",
+        "Core Population": "0.74M"
+    },
+    {
+        "id": 46,
+        "name": "Lithuania",
+        "continent": "Europe",
+        "startingNation": "Yes",
+        "government": "Non-Aligned",
+        "strength": "Minor",
+        "states": "5",
+        "Core Population": "2.20M"
+    },
+    {
+        "id": 47,
+        "name": "Luxembourg",
+        "continent": "Europe",
+        "startingNation": "Yes",
+        "government": "Democracy",
+        "strength": "Minor",
+        "states": "1",
+        "Core Population": "0.29M"
+    },
+    {
+        "id": 48,
+        "name": "Manchukuo",
+        "continent": "Asia",
+        "startingNation": "Yes",
+        "government": "Fascist",
+        "strength": "Minor",
+        "states": "7",
+        "Core Population": "34.34M"
+    },
+    {
+        "id": 49,
+        "name": "Mengkukuo",
+        "continent": "Asia",
+        "startingNation": "Yes",
+        "government": "Fascist",
+        "strength": "Minor",
+        "states": "2",
+        "Core Population": "2.04M"
+    },
+    {
+        "id": 50,
+        "name": "Mexico",
+        "continent": "North America",
+        "startingNation": "Yes",
+        "government": "Non-Aligned",
+        "strength": "Minor",
+        "states": "13",
+        "Core Population": "16.40M"
+    },
+    {
+        "id": 51,
+        "name": "Mongolia",
+        "continent": "Africa",
+        "startingNation": "Yes",
+        "government": "Communist",
+        "strength": "Minor",
+        "states": "5",
+        "Core Population": "0.77M"
+    },
+    {
+        "id": 52,
+        "name": "Nepal",
+        "continent": "Asia",
+        "startingNation": "Yes",
+        "government": "Non-Aligned",
+        "strength": "Minor",
+        "states": "1",
+        "Core Population": "5.57M"
+    },
+    {
+        "id": 53,
+        "name": "Netherlands",
+        "continent": "Europe",
+        "startingNation": "Yes",
+        "government": "Democracy",
+        "strength": "Minor",
+        "states": "5",
+        "Core Population": "7.94M"
+    },
+    {
+        "id": 54,
+        "name": "New Zealand",
+        "continent": "Oceania",
+        "startingNation": "Yes",
+        "government": "Democracy",
+        "strength": "Minor",
+        "states": "3",
+        "Core Population": "1.45M"
+    }
+    ,
+    {
+        "id": 55,
+        "name": "Nicaragua",
+        "continent": "North America",
+        "startingNation": "Yes",
+        "government": "Democracy",
+        "strength": "Minor",
+        "states": "1",
+        "Core Population": "0.68M"
+    },
+    {
+        "id": 56,
+        "name": "Norway",
+        "continent": "Europe",
+        "startingNation": "Yes",
+        "government": "Democracy",
+        "strength": "Minor",
+        "states": "11",
+        "Core Population": "3.09M"
+    },
+    {
+        "id": 57,
+        "name": "Oman",
+        "continent": "Asia",
+        "startingNation": "Yes",
+        "government": "Non-Aligned",
+        "strength": "Minor",
+        "states": "1",
+        "Core Population": "0.37M"
+    },
+    {
+        "id": 58,
+        "name": "Panama",
+        "continent": "North America",
+        "startingNation": "Yes",
+        "government": "Democracy",
+        "strength": "Minor",
+        "states": "1",
+        "Core Population": "0.47M"
+    },
+    {
+        "id": 59,
+        "name": "Paraguay",
+        "continent": "South America",
+        "startingNation": "Yes",
+        "government": "Communist",
+        "strength": "Minor",
+        "states": "2",
+        "Core Population": "0.94M"
+    },
+    {
+        "id": 60,
+        "name": "Peru",
+        "continent": "South America",
+        "startingNation": "Yes",
+        "government": "Fascist",
+        "strength": "Minor",
+        "states": "5",
+        "Core Population": "6.15M"
+    },
+    {
+        "id": 61,
+        "name": "Phillippines",
+        "continent": "Asia",
+        "startingNation": "Yes",
+        "government": "Democracy",
+        "strength": "Minor",
+        "states": "7",
+        "Core Population": "13.09M"
+    },
+    {
+        "id": 62,
         "name": "Poland",
         "continent": "Europe",
         "startingNation": "Yes",
         "government": "Non-Aligned",
-        "strength": "Minor"
+        "strength": "Minor",
+        "states": "18",
+        "Core Population": "31.94M"
     },
     {
-        "id": 3,
-        "name": "German Reich",
+        "id": 63,
+        "name": "Portugal",
         "continent": "Europe",
         "startingNation": "Yes",
-        "government": "Fascism",
-        "strength": "Major"
+        "government": "Non-Aligned",
+        "strength": "Minor",
+        "states": "20",
+        "Core Population": "6.80M"
+    },
+    {
+        "id": 64,
+        "name": "Romania",
+        "continent": "Europe",
+        "startingNation": "Yes",
+        "government": "Democracy",
+        "strength": "Minor",
+        "states": "11",
+        "Core Population": "18.05M"
+    },
+    {
+        "id": 65,
+        "name": "Saudi Arabia",
+        "continent": "Asia",
+        "startingNation": "Yes",
+        "government": "Non-Aligned",
+        "strength": "Minor",
+        "states": "9",
+        "Core Population": "2.96M"
+    },
+    {
+        "id": 66,
+        "name": "Shanxi",
+        "continent": "Europe",
+        "startingNation": "Yes",
+        "government": "Non-Aligned",
+        "strength": "Minor",
+        "states": "3",
+        "Core Population": "13.68M"
+    },
+    {
+        "id": 67,
+        "name": "Siam",
+        "continent": "Asia",
+        "startingNation": "Yes",
+        "government": "Non-Aligned",
+        "strength": "Minor",
+        "states": "4",
+        "Core Population": "14.46M"
+    },
+    {
+        "id": 68,
+        "name": "Sinkiang",
+        "continent": "Asia",
+        "startingNation": "Yes",
+        "government": "Communist",
+        "strength": "Minor",
+        "states": "6",
+        "Core Population": "4.36M"
+    },
+    {
+        "id": 69,
+        "name": "South Africa",
+        "continent": "Africa",
+        "startingNation": "Yes",
+        "government": "Democracy",
+        "strength": "Minor",
+        "states": "7",
+        "Core Population": "9.74M"
+    },
+    {
+        "id": 70,
+        "name": "Soviet Union",
+        "continent": "Europe",
+        "startingNation": "Yes",
+        "government": "Communist",
+        "strength": "Major",
+        "states": "152",
+        "Core Population": "161.41M"
+    },
+    {
+        "id": 71,
+        "name": "Spain",
+        "continent": "Europe",
+        "startingNation": "Yes",
+        "government": "Democracy",
+        "strength": "Minor",
+        "states": "26",
+        "Core Population": "24.73M"
+    },
+    {
+        "id": 72,
+        "name": "Sweden",
+        "continent": "Europe",
+        "startingNation": "Yes",
+        "government": "Democracy",
+        "strength": "Minor",
+        "states": "13",
+        "Core Population": "6.44M"
+    },
+    {
+        "id": 73,
+        "name": "Switzerland",
+        "continent": "Europe",
+        "startingNation": "Yes",
+        "government": "Democracy",
+        "strength": "Minor",
+        "states": "5",
+        "Core Population": "4.22M"
+    },
+    {
+        "id": 74,
+        "name": "Tannu Tuva",
+        "continent": "Asia",
+        "startingNation": "Yes",
+        "government": "Communist",
+        "strength": "Minor",
+        "states": "1",
+        "Core Population": "0.09M"
+    },
+    {
+        "id": 75,
+        "name": "Tibet",
+        "continent": "Asia",
+        "startingNation": "Yes",
+        "government": "Non-Aligned",
+        "strength": "Minor",
+        "states": "3",
+        "Core Population": "3.72M"
+    },
+    {
+        "id": 76,
+        "name": "Turkey",
+        "continent": "Asia",
+        "startingNation": "Yes",
+        "government": "Non-Aligned",
+        "strength": "Minor",
+        "states": "21",
+        "Core Population": "14.53M"
+    },
+    {
+        "id": 77,
+        "name": "United Kingdom",
+        "continent": "Europe",
+        "startingNation": "Yes",
+        "government": "Democracy",
+        "strength": "Major",
+        "states": "92",
+        "Core Population": "45.02M"
+    },
+    {
+        "id": 78,
+        "name": "United States",
+        "continent": "North America",
+        "startingNation": "Yes",
+        "government": "Democracy",
+        "strength": "Major",
+        "states": "53",
+        "Core Population": "122.77M"
+    },
+    {
+        "id": 79,
+        "name": "Uruguay",
+        "continent": "South America",
+        "startingNation": "Yes",
+        "government": "Democracy",
+        "strength": "Minor",
+        "states": "1",
+        "Core Population": "1.73M"
+    },
+    {
+        "id": 80,
+        "name": "Venezuela",
+        "continent": "South America",
+        "startingNation": "Yes",
+        "government": "Fascist",
+        "strength": "Minor",
+        "states": "3",
+        "Core Population": "3.16M"
+    },
+    {
+        "id": 81,
+        "name": "Xibei San Ma",
+        "continent": "Asia",
+        "startingNation": "Yes",
+        "government": "Non-Aligned",
+        "strength": "Minor",
+        "states": "7",
+        "Core Population": "12.38M"
+    },
+    {
+        "id": 82,
+        "name": "Yemen",
+        "continent": "Africa",
+        "startingNation": "Yes",
+        "government": "Non-Aligned",
+        "strength": "Minor",
+        "states": "1",
+        "Core Population": "2.49M"
+    },
+    {
+        "id": 83,
+        "name": "Yugoslavia",
+        "continent": "Europe",
+        "startingNation": "Yes",
+        "government": "Non-Aligned",
+        "strength": "Minor",
+        "states": "14",
+        "Core Population": "13.76M"
+    },
+    {
+        "id": 84,
+        "name": "Yunnan",
+        "continent": "Asia",
+        "startingNation": "Yes",
+        "government": "Non-Aligned",
+        "strength": "Minor",
+        "states": "2",
+        "Core Population": "11.99M"
     }
 ]

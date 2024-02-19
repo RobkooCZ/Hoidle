@@ -81,6 +81,23 @@ document.addEventListener("DOMContentLoaded", function() {
       // Change the background every 10 seconds (10000 milliseconds) using setInterval
       setInterval(changeBackground, 10000);
   }
+
+  // Integrate the code for changing the image source here
+  const theme = savedTheme || "dark"; // Default to dark theme if no theme is saved
+
+  // Select the image element
+  const imageElement = document.querySelector('.dropbtn-mobile');
+
+  // Define the default image paths
+  let imagePath = "../src/assets/images/icons/dropdown-dark.png";
+
+  // Check the theme and update the image path accordingly
+  if (theme === "light") {
+      imagePath = "../src/assets/images/icons/dropdown.png";
+  }
+
+  // Set the src attribute of the image element
+  imageElement.src = imagePath;
 });
 
 
@@ -91,47 +108,41 @@ var links = [
 ];
 
 // Function to generate a random link based on weights
-function weightedRandom(arr)
-{
-var weightSum = arr.map(l => l.weight).reduce((a, b) => a + b, 0);
-var rand = Math.random() * weightSum;
+function weightedRandom(arr) {
+  var weightSum = arr.map(l => l.weight).reduce((a, b) => a + b, 0);
+  var rand = Math.random() * weightSum;
 
-var accumulated = 0;
-for (var i = 0; i < arr.length; i++)
-{
-  if (rand < accumulated + arr[i].weight)
-  {
-    return arr[i];
+  var accumulated = 0;
+  for (var i = 0; i < arr.length; i++) {
+      if (rand < accumulated + arr[i].weight) {
+          return arr[i];
+      }
+
+      accumulated += arr[i].weight;
   }
-  
-  accumulated += arr[i].weight;
-}
 }
 
 // Function to open a random site
 function openSite() {
-var link = weightedRandom(links);
+  var link = weightedRandom(links);
 
-var win = window.open(link.url);
-win.focus();
+  var win = window.open(link.url);
+  win.focus();
 }
 
 // Function to perform an experiment
-function experiment()
-{
-var testsCount = 10000;
-var counts = {};
+function experiment() {
+  var testsCount = 10000;
+  var counts = {};
 
-for (var i = 0; i < links.length; i++)
-{
-  counts[links[i].url] = 0;
-}
+  for (var i = 0; i < links.length; i++) {
+      counts[links[i].url] = 0;
+  }
 
-for (var i = 0; i < testsCount; i++)
-{
-  var link = weightedRandom(links);
-  counts[link.url]++;
-}
+  for (var i = 0; i < testsCount; i++) {
+      var link = weightedRandom(links);
+      counts[link.url]++;
+  }
 }
 
 experiment(); // Execute the experiment

@@ -476,7 +476,15 @@
         margin: 0 5vh; /* Margin */
     }
     nav {
-        margin: 2vh 5vh 1vh; /* Margin */
+      opacity: 0;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+    .topnav{
+        position: absolute;
+        padding: 0;
+        margin: 0;
     }
     .mainPart {
         margin: 2vh 5vh 1vh; /* Margin */

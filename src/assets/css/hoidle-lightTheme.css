@@ -436,7 +436,13 @@ body nav .topnav .special-hoidle:hover {
     nav {
         opacity: 0;
         position: absolute;
-        pointer-events: none;
+        bottom: 0;
+        right: 0;
+    }
+    .topnav{
+        position: absolute;
+        padding: 0;
+        margin: 0;
     }
 
     #input{

@@ -56,6 +56,7 @@ fetch('../src/assets/js/json/database.json')
 
         // Create a container div for input box and button
         const inputContainer = document.createElement('div');
+        inputContainer.id = 'input';
         inputContainer.appendChild(inputBox);
         inputContainer.appendChild(button);
 
@@ -119,7 +120,7 @@ fetch('../src/assets/js/json/database.json')
                 document.getElementById("content").appendChild(resultElement);
 
                 // Fetch data for the hidden country
-                const hiddenCountry = "Peru" // Temporary hidden country
+                const hiddenCountry = "Brazil" // Temporary hidden country
                 try {
                     const hiddenCountryData = await fetchHiddenCountryData(hiddenCountry);
 

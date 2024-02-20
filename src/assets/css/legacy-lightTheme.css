@@ -32,6 +32,12 @@ body {
   background-size: cover; /* Cover the entire background */
   transition: background-image 2s ease-in-out; /* Transition effect for background image */
 
+  .dropdown-mobile{
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+  }
+
   #settingsButton {
     background: none;
     border: none;
@@ -543,13 +549,18 @@ body {
         scale: 0.6;
       }
 
-  .mainPart {
-    margin: 2vh 5vh 2vh; /* Margin */
-    .biggestAssText{
-      font-size: 5vh;
+    .mainPart {
+      margin: 2vh 5vh 2vh; /* Margin */
+      .biggestAssText{
+        font-size: 5vh;
+      }
+
+      /*redo the table so its vertical rather than horizontal (meaning it fits) */
+      max-height: 80vh;
+      p {
+        font-size: 1.5vh;
+      }
     }
-    max-height: 80vh;
-  }
 
   #settingsImage {
       max-width: 10vh;

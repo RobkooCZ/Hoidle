@@ -513,6 +513,85 @@
     }
 
     body{
+      /* Styling for gallery */
+.gallery {
+  display: grid; /* Use grid layout */
+  grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+  gap: 1vh; /* Gap between grid items */
+  margin: 2vh; /* Margin */
+  margin-top: 1vh; /* Margin top */
+  overflow-y: auto; /* Enable vertical scrollbar when needed */
+  max-height: 75vh; /* Maximum height */
+
+  /* Styling for scrollbar */
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+
+  &::-webkit-scrollbar {
+    width: 1.2vh; /* Width */
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Background color */
+    border: black 0.1vh solid; /* Border style */
+    border-radius: 1vh; /* Border radius */
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #888; /* Background color */
+    border-radius: 1vh; /* Border radius */
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Background color on hover */
+  }
+}
+
+/* Styling for image container */
+.image-container {
+  position: relative; /* Position */
+  overflow: hidden; /* Hide overflowing content */
+  border-radius: 2vh; /* Border radius */
+  max-height: 40vh; /* Maximum height */
+  margin-right: 1vh; /* Margin right */
+
+  /* Styling for image title */
+  .image-title {
+    position: absolute; /* Position */
+    bottom: 0; /* Position from bottom */
+    left: 0; /* Position from left */
+    width: 100%; /* Full width */
+    background: rgba(0, 0, 0, 0.7); /* Background color with opacity */
+    color: #fff; /* Text color */
+    margin: 0; /* Margin */
+    padding-top: 0.5vh; /* Padding top */
+    padding-bottom: 0.5vh; /* Padding bottom */
+    opacity: 0; /* Initial opacity */
+    transition: opacity 0.3s ease-in-out; /* Transition effect */
+    text-align: center; /* Center align text */
+    font-size: 1vh; /* Font size */
+  }
+
+  &:hover .image-title {
+    opacity: 1; /* Show image title on hover */
+  }
+}
+
+/* Styling for images in the gallery */
+.gallery img {
+  width: 100%; /* Full width */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Display as block element */
+  border-radius: 2vh; /* Border radius */
+  transition: transform 0.2s ease-in-out; /* Transition effect */
+}
+
+/* Styling for images in the gallery on hover */
+.gallery img:hover {
+  transform: scale(1.1); /* Scale image on hover */
+}
+
+
        /* Dropdown Button */
       .dropbtn-mobile {
       background-color: none;

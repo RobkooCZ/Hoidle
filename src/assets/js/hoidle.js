@@ -120,7 +120,7 @@ fetch('../src/assets/js/json/database.json')
                 document.getElementById("content").appendChild(resultElement);
 
                 // Fetch data for the hidden country
-                const hiddenCountry = "Brazil" // Temporary hidden country
+                const hiddenCountry = "Guangxi Clique" // Temporary hidden country
                 try {
                     const hiddenCountryData = await fetchHiddenCountryData(hiddenCountry);
 
